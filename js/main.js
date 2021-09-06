@@ -27,7 +27,7 @@
   }
 
   for (const anchor of anchors) {
-    anchor.addEventListener('click', {passive: true}, (evt) => {
+    anchor.addEventListener('click', (evt) => {
       evt.preventDefault();
 
       const blockID = anchor.getAttribute('href').substr(1);
@@ -39,7 +39,7 @@
     });
   }
 
-  navToggle.addEventListener('click', {passive: true},  () => {
+  navToggle.addEventListener('click', () => {
     if (navMain.classList.contains('main-nav--closed')) {
       body.classList.add('mobile-menu');
       navMain.classList.remove('main-nav--closed');
@@ -55,7 +55,7 @@
     }
   });
 
-  nameInput.addEventListener('input', {passive: true}, () => {
+  nameInput.addEventListener('input', () => {
     const valueLength = nameInput.value.length;
     const minNameLength = nameInput.minLength;
 
@@ -73,7 +73,7 @@
     nameInput.reportValidity();
   });
 
-  phoneInput.addEventListener('input', {passive: true}, () => {
+  phoneInput.addEventListener('input', () => {
     const pattern = /^[+-?\d?()?\s]{11,18}$/;
 
     if (phoneInput.validity.valueMissing) {
@@ -89,7 +89,7 @@
     phoneInput.reportValidity();
   });
 
-  selectionForm.addEventListener('submit', {passive: true}, (evt) => {
+  selectionForm.addEventListener('submit', (evt) => {
     if (nameInput.value && phoneInput.value) {
       evt.preventDefault();
       localStorage.setItem('name', nameInput.value);
@@ -103,13 +103,13 @@
     if (success) {
       const successButton = success.querySelector('.success__button');
 
-      successButton.addEventListener('click', {passive: true}, (event) => {
+      successButton.addEventListener('click', (event) => {
         event.preventDefault();
         success.classList.remove('success--open');
         overlay.classList.remove('overlay--open');
       });
 
-      window.addEventListener('keydown', {passive: true}, (event) => {
+      window.addEventListener('keydown', (event) => {
         if (event.keyCode === 27) {
           if (success.classList.contains('success--open')) {
             evt.preventDefault();
@@ -119,7 +119,7 @@
         }
       });
 
-      overlay.addEventListener('click', {passive: true}, () => {
+      overlay.addEventListener('click', () => {
         success.classList.remove('success--open');
         overlay.classList.remove('overlay--open');
       });
