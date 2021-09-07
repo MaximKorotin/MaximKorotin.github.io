@@ -36,11 +36,17 @@
         behavior: 'smooth',
         block: 'start',
       });
+      body.classList.remove('mobile-menu');
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+      navToggle.classList.add('nav-toggle--closed');
+      navToggle.classList.remove('nav-toggle--opened');
     });
   }
 
   navToggle.addEventListener('click', () => {
     if (navMain.classList.contains('main-nav--closed')) {
+      
       body.classList.add('mobile-menu');
       navMain.classList.remove('main-nav--closed');
       navMain.classList.add('main-nav--opened');
