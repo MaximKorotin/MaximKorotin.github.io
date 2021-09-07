@@ -46,6 +46,7 @@
 
   navToggle.addEventListener('click', () => {
     if (navMain.classList.contains('main-nav--closed')) {
+      
       body.classList.add('mobile-menu');
       navMain.classList.remove('main-nav--closed');
       navMain.classList.add('main-nav--opened');
