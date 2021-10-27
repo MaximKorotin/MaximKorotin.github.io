@@ -30,7 +30,7 @@
   if (storageEmail) {
     loginEmail.value = storageEmail;
   }
-
+  /*Функция удаления оверлея при изменении разрешения экрана*/
   const monitorsWindowSizeOverlay = () => {
     if (window.innerWidth >= 1024) {
       overlay.classList.remove('overlay--open');
@@ -39,6 +39,7 @@
     }
   };
 
+  /*Функция добавляющая отступ при изменении разрешения экрана*/
   const monitorsWindowSizeHeaderMain = () => {
     if (window.innerWidth >= 1024) {
       headerMain.style.marginTop = '';
@@ -47,6 +48,7 @@
     }
   };
 
+  /*Функция закрывающая меню навигации*/
   const closesdNavigation = () => {
     window.removeEventListener('resize', monitorsWindowSizeOverlay, monitorsWindowSizeHeaderMain);
     headerMain.style.marginTop = '';
@@ -62,6 +64,7 @@
     navToggle.classList.remove('nav-toggle--opened');
   };
 
+  /*Открытие, закрытие меню навигации*/
   navToggle.addEventListener('click', () => {
     if (headerMain.classList.contains('page-header__main--closed')) {
       window.addEventListener('resize', monitorsWindowSizeOverlay, monitorsWindowSizeHeaderMain);
@@ -83,6 +86,7 @@
     }
   });
 
+  /*Открывает попап логина*/
   loginHeader.addEventListener('click', (evt) => {
     evt.preventDefault();
 
@@ -92,6 +96,7 @@
     loginEmail.focus();
   });
 
+  /*Закрывает попап логина с помощью Esc*/
   window.addEventListener('keydown', (evt) => {
     if (evt.keyCode === 27) {
       if (loginPopap.classList.contains('login-popap--active')) {
@@ -103,6 +108,7 @@
     }
   });
 
+  /*Закрывает попап логина по нажатию на оверлей*/
   loginPopap.addEventListener('click', (evt) => {
     if (evt.target === loginPopap) {
       loginPopap.classList.remove('login-popap--active');
@@ -110,6 +116,7 @@
     }
   });
 
+  /*Закрывает попап логина с помощью кнопки "X"*/
   loginPopapClose.addEventListener('click', (evt) => {
     evt.preventDefault();
 
@@ -117,6 +124,7 @@
     body.classList.remove('page-body--popup');
   });
 
+  /*Обрабатывает форму логина*/
   loginForm.addEventListener('submit', (evt) => {
     if (!loginEmail.value || !loginPassword.value) {
       evt.preventDefault();
@@ -129,6 +137,7 @@
     }
   });
 
+  /*Добавляет автоматизацию для баяна*/
   if (faq) {
     for (let i = 0; i < faq.length; i++) {
       faq[i].classList.remove('faq--nojs');
@@ -147,7 +156,7 @@
 
   /*global Swiper*/
   /*eslint no-undef: "error"*/
-
+  /*Добавляет и отслеживает слайдер Swiper*/
   if (sliderSwiper) {
     sliderSwiper.querySelector('.slider__container').classList.remove('slider__container--nojs');
     sliderSwiper.querySelector('.swiper').classList.remove('swiper--nojs');
@@ -218,6 +227,7 @@
     });
   }
 
+  /*Добавляет автоматизацию для фильтра*/
   if (filterCatalogTitle) {
     for (let i = 0; i < filterCatalogTitle.length; i++) {
       filterCatalogTitle[i].classList.remove('filter-catalog__title--nojs');
