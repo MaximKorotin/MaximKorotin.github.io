@@ -145,8 +145,6 @@
     }
   }
 
-  /*global Swiper*/
-  /*eslint no-undef: "error"*/
   /*Добавляет и отслеживает слайдер Swiper*/
   if (sliderSwiper) {
     sliderSwiper.querySelector('.slider__container').classList.remove('slider__container--nojs');
@@ -161,7 +159,7 @@
       elem.classList.remove('swiper-slide--invisible-tablet');
     });
 
-    const swiper = new Swiper('.swiper', {
+    const swiper = new window.Swiper('.swiper', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
