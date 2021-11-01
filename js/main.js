@@ -1,4 +1,5 @@
 (function () {
+  const KEYCODE_TAB = 9;
   const body = document.querySelector('.page-body');
   const header = body.querySelector('.page-header');
   const logo = body.querySelector('.page-header__logo');
@@ -77,6 +78,16 @@
     }
   });
 
+  /*Функция ловушки фокуса попапа логина*/
+  const monitorsTabRestrictor = (evt) => {
+    const isTabPressed = (evt.key === 'Tab' || evt.keyCode === KEYCODE_TAB);
+    const elementFocused = document.activeElement;
+
+    if (elementFocused === loginPopapClose && isTabPressed) {
+      loginForm.focus();
+    }
+  };
+
   /*Открывает попап логина*/
   loginHeader.addEventListener('click', (evt) => {
     evt.preventDefault();
@@ -85,6 +96,7 @@
     loginPopap.classList.add('login-popap--active');
     body.classList.add('page-body--popup');
     loginEmail.focus();
+    window.addEventListener('keydown', monitorsTabRestrictor);
   });
 
   /*Закрывает попап логина с помощью Esc*/
@@ -95,6 +107,7 @@
 
         loginPopap.classList.remove('login-popap--active');
         body.classList.remove('page-body--popup');
+        window.removeEventListener('keydown', monitorsTabRestrictor);
       }
     }
   });
@@ -104,6 +117,7 @@
     if (evt.target === loginPopap) {
       loginPopap.classList.remove('login-popap--active');
       body.classList.remove('page-body--popup');
+      window.removeEventListener('keydown', monitorsTabRestrictor);
     }
   });
 
@@ -113,6 +127,7 @@
 
     loginPopap.classList.remove('login-popap--active');
     body.classList.remove('page-body--popup');
+    window.removeEventListener('keydown', monitorsTabRestrictor);
   });
 
   /*Обрабатывает форму логина*/
