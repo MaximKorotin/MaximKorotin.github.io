@@ -404,7 +404,7 @@
       <header class="header">
         <div class="container">
           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"><span></span></button><a class="header__logo" href="#"><img src="img/svg/full-logo-header.svg" width="100" height="28" alt="Logo"></a>
+            <button class="main-nav__toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"><span class="burger"></span></button><a class="header__logo" href="#"><img src="img/svg/full-logo-header.svg" width="100" height="28" alt="Logo"></a>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="#intro">What is NFT</a>
@@ -419,7 +419,7 @@
                 </li>
                 <li class="main-nav__item"><a class="main-nav__link" href="#us">About us</a>
                 </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Contacts</a>
+                <li class="main-nav__item"><a class="main-nav__link" href="#form">Contacts</a>
                 </li>
               </ul>
               <div class="main-nav__btn-wrapper"><a class="btn btn--transparent btn--main-nav" href="#" download aria-label="Download presentation">Presentation</a></div>
@@ -432,17 +432,16 @@
         <section class="main-screen">
           <div class="main-screen__background">
             <picture>
-              <source type="image/webp" srcset="img/content/bridge.webp, img/content/bridge@2x.webp 2x"><img src="img/content/bridge.jpg" srcset="img/content/bridge@2x.jpg 2x" width="2560" height="700" alt="bridge">
-            </picture>
-          </div>
-          <div class="main-screen__logo">
-            <picture>
-              <source type="image/webp" srcset="img/content/bridge-logo.webp, img/content/bridge-logo@2x.webp 2x"><img src="img/content/bridge-logo.png" srcset="img/content/bridge-logo@2x.png 2x" width="145" height="145" alt="logo on bridge">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/content/bridge-mobile.webp, img/content/bridge-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/bridge.webp, img/content/bridge@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/content/bridge-mobile.jpg, img/content/bridge-mobile@2x.jpg 2x"><img src="img/content/bridge.jpg" srcset="img/content/bridge@2x.jpg 2x" width="2560" height="700" alt="bridge">
             </picture>
           </div>
           <div class="container">
-            <h1 class="main-screen__title title title--h1">Join the NFT and GameFi<span>by using Metaverse infrastructure</span></h1>
-            <p class="main-screen__description">We deliver one-click deploy end-to-end solution for brands to meet NFT and Gamefi</p>
+            <div class="main-screen__container">
+              <h1 class="main-screen__title title title--h1">Join the NFT and GameFi<span>by using Metaverse infrastructure</span></h1>
+              <p class="main-screen__description">We deliver one-click deploy end-to-end solution for brands to meet NFT and Gamefi</p>
+            </div>
             <div class="main-screen__wrapper"><span>Brands</span><span>NFT & GameFi</span></div><a class="btn btn--light btn--main-screen" href="#form" aria-label="Go to join form">Join now</a><a class="btn btn--transparent btn--main-screen" href="#" download aria-label="Download presentation">Presentation</a>
           </div>
         </section>
@@ -701,6 +700,23 @@
                 <li class="slider__item item slider__item--bottom5">
                   <div class="item__wrapper">
                     <div class="slider__wrapper">
+                      <h4 class="title title--slider">Why 144-years-old brands are launching NFTs</h4>
+                      <div class="slider__svg-bubble">
+                        <svg height="22" aria-hidden="true">
+                          <use xlink:href="#icon-bubble"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="slider__svg-label">
+                      <svg width="80" height="60" aria-hidden="true">
+                        <use xlink:href="#icon-cnbc"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider__item item slider__item--bottom6">
+                  <div class="item__wrapper">
+                    <div class="slider__wrapper">
                       <h4 class="title title--slider">Rare Bored Ape Yacht Club NFT Sells for Record $3.4 Million USD</h4>
                       <div class="slider__svg-bubble">
                         <svg height="22" aria-hidden="true">
@@ -715,7 +731,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="slider__item item slider__item--bottom6">
+                <li class="slider__item item slider__item--bottom7">
                   <div class="item__wrapper">
                     <div class="slider__wrapper">
                       <h4 class="title title--slider">Pepsi Intriduces First NFT Series From VaynerNFT: How You Can Grab One</h4>
@@ -732,7 +748,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="slider__item item slider__item--bottom7">
+                <li class="slider__item item slider__item--bottom8">
                   <div class="item__wrapper">
                     <div class="slider__wrapper">
                       <h4 class="title title--slider">The Morning After: Adidas’ first NFT drop made $23 million</h4>
@@ -750,7 +766,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="slider__item item slider__item--bottom8">
+                <li class="slider__item item slider__item--bottom9">
                   <div class="item__wrapper">
                     <div class="slider__wrapper">
                       <h4 class="title title--slider">Unreleased Whitney Houston recording NFT sells for $1M</h4>
@@ -763,6 +779,23 @@
                     <div class="slider__svg-label">
                       <svg width="72" height="22" aria-hidden="true">
                         <use xlink:href="#icon-mbw"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider__item item slider__item--bottom10">
+                  <div class="item__wrapper">
+                    <div class="slider__wrapper">
+                      <h4 class="title title--slider">Why 144-years-old brands are launching NFTs</h4>
+                      <div class="slider__svg-bubble">
+                        <svg height="22" aria-hidden="true">
+                          <use xlink:href="#icon-bubble"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="slider__svg-label">
+                      <svg width="80" height="60" aria-hidden="true">
+                        <use xlink:href="#icon-cnbc"></use>
                       </svg>
                     </div>
                   </div>
@@ -823,7 +856,10 @@
                 </li>
               </ul>
               <div class="nft-objects__example">
-                <div class="nft-objects__img"><img src="img/content/example.jpg" srcset="img/content/example@2x.jpg 2x" width="458" height="185" alt="Пример">
+                <div class="nft-objects__img">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/example.webp, img/content/example@2x.webp 2x"><img src="img/content/example.jpg" srcset="img/content/example@2x.jpg 2x" width="458" height="185" alt="Пример">
+                  </picture>
                 </div>
                 <div class="nft-objects__date">
                   <p>Jack Dorsey’s first tweet sold as an NFT for an olddly specific $2,915,835.47</p><span>The winning bildder for the Twitter CEO’s first tweet was Sina Estavi</span>
@@ -839,7 +875,10 @@
             <div class="container">
               <h2 class="meta-intro__title title title--h2">And what is&nbsp;<span class="meta-intro__title-gradient">Metaverse?</span></h2>
               <div class="meta-intro__wrapper">
-                <div class="meta-intro__img"><img src="img/content/meta.png" srcset="img/content/meta@2x.png 2x" width="595" height="461" alt="metaverse">
+                <div class="meta-intro__img">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/meta.webp, img/content/meta@2x.webp 2x"><img src="img/content/meta.png" srcset="img/content/meta@2x.png 2x" width="595" height="461" alt="metaverse">
+                  </picture>
                 </div>
                 <div class="meta-intro__text">
                   <p>NFTs are widely used in the metaverses as&nbsp;the backbone of their economy, where all&nbsp;major assets are presented in&nbsp;the form of&nbsp;non-fungible tokens.</p>
@@ -916,8 +955,8 @@
             </div>
           </section>
         </section>
-        <section class="opportunities">
-          <h2 class="visually-hidden">Brand opportunities</h2><img class="opportunities__img opportunities__img--top" src="img/content/bg-opportunities-block-top.png" width="1440" height="560" alt="bg opportunities top"><img class="opportunities__img opportunities__img--bottom" src="img/content/bg-opportunities-block-bottom.png" width="1440" height="307" alt="bg opportunities bottom">
+        <section class="opportunities" id="why">
+          <h2 class="visually-hidden">Brand opportunities</h2><img class="opportunities__img opportunities__img--top" src="img/content/bg-opportunities-block-top.jpg" width="1440" height="160" alt="bg opportunities top"><img class="opportunities__img opportunities__img--bottom" src="img/content/bg-opportunities-block-bottom.jpg" width="1440" height="307" alt="bg opportunities bottom">
           <div class="container">
             <div class="opportunities__wrapper">
               <h3 class="title title--h2 opportunities__title">What NFT and metaverse can offer to a brand?</h3>
@@ -927,9 +966,7 @@
                     <use xlink:href="#icon-check"></use>
                   </svg>
                   <picture>
-                    <source type="image/webp" media="(max-width: 1279px)" srcset="img/content/bg-opportunities-item1-tablet.webp, img/content/bg-opportunities-item1-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/bg-opportunities-item1.webp, img/content/bg-opportunities-item1@2x.webp 2x">
-                    <source media="(max-width: 1279px)" srcset="img/content/bg-opportunities-item1-tablet.png, img/content/bg-opportunities-item1-tablet@2x.png 2x"><img src="img/content/bg-opportunities-item1.png" srcset="img/content/bg-opportunities-item1@2x.png 2x" width="380" height="250" alt="brand opportunities background item">
+                    <source type="image/webp" srcset="img/content/bg-opportunities-item1.webp, img/content/bg-opportunities-item1@2x.webp 2x"><img src="img/content/bg-opportunities-item1.png" srcset="img/content/bg-opportunities-item1@2x.png 2x" width="380" height="250" alt="brand opportunities background item">
                   </picture>
                   <p class="opportunities__description">New rich opportunities <br>for interaction with the brand and its attributes.</p>
                 </li>
@@ -938,9 +975,7 @@
                     <use xlink:href="#icon-check"></use>
                   </svg>
                   <picture>
-                    <source type="image/webp" media="(max-width: 1279px)" srcset="img/content/bg-opportunities-item2-tablet.webp, img/content/bg-opportunities-item2-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/bg-opportunities-item2.webp, img/content/bg-opportunities-item2@2x.webp 2x">
-                    <source media="(max-width: 1279px)" srcset="img/content/bg-opportunities-item2-tablet.png, img/content/bg-opportunities-item2-tablet@2x.png 2x"><img src="img/content/bg-opportunities-item2.png" srcset="img/content/bg-opportunities-item2@2x.png 2x" width="380" height="250" alt="brand opportunities background item">
+                    <source type="image/webp" srcset="img/content/bg-opportunities-item2.webp, img/content/bg-opportunities-item2@2x.webp 2x"><img src="img/content/bg-opportunities-item2.png" srcset="img/content/bg-opportunities-item2@2x.png 2x" width="380" height="250" alt="brand opportunities background item">
                   </picture>
                   <p class="opportunities__description">Creation of next generation game mechanics and growth of brand engagement.</p>
                 </li>
@@ -949,9 +984,7 @@
                     <use xlink:href="#icon-check"></use>
                   </svg>
                   <picture>
-                    <source type="image/webp" media="(max-width: 1279px)" srcset="img/content/bg-opportunities-item3-tablet.webp, img/content/bg-opportunities-item3-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/bg-opportunities-item3.webp, img/content/bg-opportunities-item3@2x.webp 2x">
-                    <source media="(max-width: 1279px)" srcset="img/content/bg-opportunities-item3-tablet.png, img/content/bg-opportunities-item3-tablet@2x.png 2x"><img src="img/content/bg-opportunities-item3.png" srcset="img/content/bg-opportunities-item3@2x.png 2x" width="380" height="490" alt="brand opportunities background item">
+                    <source type="image/webp" srcset="img/content/bg-opportunities-item3.webp, img/content/bg-opportunities-item3@2x.webp 2x"><img src="img/content/bg-opportunities-item3.png" srcset="img/content/bg-opportunities-item3@2x.png 2x" width="380" height="490" alt="brand opportunities background item">
                   </picture>
                   <p class="opportunities__description">New trendy brand perception (compliance with trends) <br>and adoption to wealthy <br>Z-generation.</p>
                 </li>
@@ -960,9 +993,7 @@
                     <use xlink:href="#icon-check"></use>
                   </svg>
                   <picture>
-                    <source type="image/webp" media="(max-width: 1279px)" srcset="img/content/bg-opportunities-item4-tablet.webp, img/content/bg-opportunities-item4-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/bg-opportunities-item4.webp, img/content/bg-opportunities-item4@2x.webp 2x">
-                    <source media="(max-width: 1279px)" srcset="img/content/bg-opportunities-item4-tablet.png, img/content/bg-opportunities-item4-tablet@2x.png 2x"><img src="img/content/bg-opportunities-item4.png" srcset="img/content/bg-opportunities-item4@2x.png 2x" width="380" height="220" alt="brand opportunities background item">
+                    <source type="image/webp" srcset="img/content/bg-opportunities-item4.webp, img/content/bg-opportunities-item4@2x.webp 2x"><img src="img/content/bg-opportunities-item4.png" srcset="img/content/bg-opportunities-item4@2x.png 2x" width="380" height="220" alt="brand opportunities background item">
                   </picture>
                   <p class="opportunities__description">User acquisition boost, engagement and retention.</p>
                 </li>
@@ -971,9 +1002,7 @@
                     <use xlink:href="#icon-check"></use>
                   </svg>
                   <picture>
-                    <source type="image/webp" media="(max-width: 1279px)" srcset="img/content/bg-opportunities-item5-tablet.webp, img/content/bg-opportunities-item5-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/bg-opportunities-item5.webp, img/content/bg-opportunities-item5@2x.webp 2x">
-                    <source media="(max-width: 1279px)" srcset="img/content/bg-opportunities-item5-tablet.png, img/content/bg-opportunities-item5-tablet@2x.png 2x"><img src="img/content/bg-opportunities-item5.png" srcset="img/content/bg-opportunities-item5@2x.png 2x" width="380" height="220" alt="brand opportunities background item">
+                    <source type="image/webp" srcset="img/content/bg-opportunities-item5.webp, img/content/bg-opportunities-item5@2x.webp 2x"><img src="img/content/bg-opportunities-item5.png" srcset="img/content/bg-opportunities-item5@2x.png 2x" width="380" height="220" alt="brand opportunities background item">
                   </picture>
                   <p class="opportunities__description">New revenue stream.</p>
                 </li>
@@ -981,14 +1010,14 @@
             </div>
           </div>
         </section>
-        <section class="guide">
+        <section class="guide" id="solutions">
           <div class="guide__bg guide__bg--top">
             <picture>
               <source type="image/webp" srcset="img/content/true-future-bg-top.webp, img/content/true-future-bg-top@2x.webp 2x"><img src="img/content/true-future-bg-top.png" srcset="img/content/true-future-bg-top@2x.png 2x" width="1440" height="154" alt="background">
             </picture>
           </div>
           <div class="container container--no-padding">
-            <h2 class="title title--h2"><span class="guide__highlighted-item">TRUE Future</span> — your reliable guide into the world of GameFi</h2>
+            <h2 class="title title--h2"><span class="guide__highlighted-title">TRUE Future</span> — your reliable guide into the world of GameFi</h2>
             <ul class="guide__list">
               <li class="card card--transparent">
                 <p class="card__text">TRUE is a complex ecosystem providing all the needed <span class=guide__highlighted-item>infrastructure for gamers, developers and brands</span> going digital, deep in metaverse.</p>
@@ -1130,7 +1159,7 @@
               <div class="questions__block">
                 <div class="questions__question">
                   <p class="questions__text">There are plenty of companies and NFT marketplaces.</p>
-                  <p class="questions__text">Why&nbsp;is&nbsp;TRUE team<span class="guide__highlighted-item">  the most reliable?</span></p>
+                  <p class="questions__text">Why&nbsp;is&nbsp;TRUE team<span class="questions__highlighted-item">  the most reliable?</span></p>
                 </div>
                 <div class="questions__svg">
                   <svg width="23" height="23" aria-hidden="true">
@@ -1180,7 +1209,7 @@
               <div class="questions__block">
                 <div class="questions__question">
                   <p class="questions__text">There are plenty of companies and NFT marketplaces.</p>
-                  <p class="questions__text">Why&nbsp;is&nbsp;TRUE<span class="guide__highlighted-item">  the most interesting?</span></p>
+                  <p class="questions__text">Why&nbsp;is&nbsp;TRUE<span class="questions__highlighted-item">  the most interesting?</span></p>
                 </div>
                 <div class="questions__svg">
                   <svg width="23" height="23" aria-hidden="true">
@@ -2085,14 +2114,13 @@
             </div>
           </div>
         </section>
-        <section class="cases">
+        <section class="cases" id="cases">
           <div class="container">
             <h2 class="cases__title title title--h2">True cases</h2>
             <div class="cases__wrapper">
               <ul class="cases__list">
                 <li class="cases__item cases__item--1">
-                  <div class="cases__img"><img class="cases__img-bg" src="img/content/bg-case-1.png" width="380" height="250" alt="Spartak">
-                    <div class="cases__img-list cases__img-list--spartak"></div>
+                  <div class="cases__img"><img class="cases__img-bg" src="img/content/bg-case-1.png" width="380" height="250" alt="Spartak"><img src="img/content/case-1.png" srcset="img/content/case-1@2x.png 2x" width="380" height="250" alt="Spartak">
                   </div>
                   <div class="cases__info">
                     <h4 class="cases__info-title title">FC Spartak</h4>
@@ -2100,8 +2128,7 @@
                   </div>
                 </li>
                 <li class="cases__item cases__item--2">
-                  <div class="cases__img"><img class="cases__img-bg" src="img/content/bg-case-2.png" width="380" height="250" alt="Souzmultfilm">
-                    <div class="cases__img-list cases__img-list--souzmultfilm"></div>
+                  <div class="cases__img cases__img--souz"><img class="cases__img-bg" src="img/content/bg-case-2.png" width="380" height="250" alt="Souzmultfilm"><img src="img/content/case-2.png" srcset="img/content/case-2@2x.png 2x" width="314" height="185" alt="Souzmultfilm">
                   </div>
                   <div class="cases__info">
                     <h4 class="cases__info-title title">Souzmultfilm</h4>
@@ -2109,8 +2136,7 @@
                   </div>
                 </li>
                 <li class="cases__item cases__item--3">
-                  <div class="cases__img"><img class="cases__img-bg" src="img/content/bg-case-3.png" width="380" height="250" alt="Bellator">
-                    <div class="cases__img-list cases__img-list--bellator"></div>
+                  <div class="cases__img"><img class="cases__img-bg" src="img/content/bg-case-3.png" width="380" height="250" alt="Bellator"><img src="img/content/case-3.png" srcset="img/content/case-3@2x.png 2x" width="380" height="250" alt="Bellator">
                   </div>
                   <div class="cases__info">
                     <h4 class="cases__info-title title">Bellator</h4>
@@ -2121,9 +2147,23 @@
             </div>
           </div>
         </section>
-        <section class="promo">
+        <section class="promo" id="us">
           <div class="container">
-            <h2 class="promo__title title title--h2"><span class="promo__title-gradient">We are TRUE.&nbsp;</span>Nice to meet you.</h2>
+            <h2 class="promo__title title title--h2"><span class="promo__title-gradient">We are TRUE.&nbsp;<br></span>Nice to meet you.</h2>
+            <ul class="promo__list">
+              <li class="card card--promo">
+                <p class="card__title">Standing along with the&nbsp;pioneers of crypto Gaming market</p>
+                <p class="card__text">We conducted a successful ICO back in 2017, having collected over 2,000 BTC, and created a world- recognizable blockchain&nbsp;- based crypto-game.</p>
+              </li>
+              <li class="card card--promo">
+                <p class="card__title">Five years of&nbsp;gaming experience</p>
+                <p class="card__text">We are part of the international gaming holding that covers the full vertical of the structure from game development to operating brands on its own platform.</p>
+              </li>
+              <li class="card card--promo">
+                <p class="card__title">Team of concerned professionals</p>
+                <p class="card__text">We have brought together top professionals: developers, game designers, illustrators, product managers, legal and financial expertise and many others to create a first-class product.</p>
+              </li>
+            </ul>
             <div class="promo__site promo-site"><img src="img/content/bg-promo.png" srcset="img/content/bg-promo@2x.png 2x" width="1180" height="280" alt="bg-promo">
               <h3 class="promo-site__title title title--h3">TRUE Future for brands, developers and gamers</h3>
               <p class="promo-site__text">Infrastructure for a smooth interaction with NFT by&nbsp;using&nbsp;GameFi innovations</p><a class="btn btn--gradient btn--promo" href="#" aria-label="Go to the site">Go to the site</a>
