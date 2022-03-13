@@ -510,6 +510,30 @@
           list-style: none;
         }
         
+        .list__wrapper:not(:last-child) {
+          margin-bottom: 60px;
+        }
+        
+        .btn--ui {
+          animation: none;
+          opacity: 1;
+          margin: 40px 20px;
+          width: max-content;
+          min-height: 60px;
+          padding: 0 63px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          z-index: 0;
+        }
+        
+        .link--ui {
+          color: tomato;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+        }
+        
       </style>
       <header class="header-ui">
         <nav class="header-ui__nav container"><a class="components-backwards" href="sitemap.html"><span>&larr;</span><span>вернуться на разводящую</span></a>
@@ -518,6 +542,7 @@
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#list-basics" data-navigation-link>Card2</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#list-sublist" data-navigation-link>Card3</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#buttons" data-navigation-link>Buttons</a></li>
+            <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#links" data-navigation-link>Links</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#form-elements" data-navigation-link>Form elements</a></li>
           </ul>
         </nav>
@@ -590,6 +615,32 @@
             </ul>
             <p>Пример вызова<code>
                 <pre>+list-sublist(data, "transparent")</pre></code></p>
+          </section>
+          <section id="buttons">
+            <h2>Buttons</h2>
+            <div class="list__wrapper">
+              <p>Класс</p><code>
+                <pre>class="btn" \ модификаторы --light</pre></code>
+              <a class="btn btn--light btn--ui" href="#" aria-label="button">button</a>
+              <p>Пример вызова</p><code>
+                <pre>+btn({href: "#", text: "button"})</pre></code>
+            </div>
+            <div class="list__wrapper">
+              <p>Класс</p><code>
+                <pre class="pre">class="btn" \ модификаторы --transparent</pre></code>
+              <a class="btn btn--transparent btn--ui" href="#" target="_blank" rel="nofollow noopener noreferrer" aria-label="link">button</a>
+              <p>Пример вызова</p><code>
+                <pre>+btn({text: "button", href: "#", isExternal: true})(aria-label="link").btn--transparent</pre></code>
+            </div>
+          </section>
+          <section id="links">
+            <h2>Links</h2>
+            <div class="list__wrapper">
+              <p>Класс</p><code>
+                <pre>class="main-nav__link"</pre></code><a class="main-nav__link link--ui" href="#">nav link</a>
+              <p>Пример вызова</p><code>
+                <pre>a.main-nav__link.link--ui(href="#") nav link</pre></code>
+            </div>
           </section>
           <section id="form-elements">
             <h2>Form elements</h2>
