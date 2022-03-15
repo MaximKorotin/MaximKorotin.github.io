@@ -2131,8 +2131,35 @@ button,
 }
 
 .btn--gradient {
-  background-image: -o-linear-gradient(4.27deg, #fcb42f -25.39%, #cb34e3 114.43%);
-  background-image: linear-gradient(85.73deg, #fcb42f -25.39%, #cb34e3 114.43%);
+  position: relative;
+  background: -o-linear-gradient(4.27deg, #fcb42f -25.39%, #cb34e3 114.43%);
+  background: linear-gradient(85.73deg, #fcb42f -25.39%, #cb34e3 114.43%);
+  overflow: hidden;
+  z-index: 100;
+}
+
+.btn--gradient::before {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -o-linear-gradient(4.27deg, #fce72f -25.39%, #df52f5 114.43%);
+  background: linear-gradient(85.73deg, #fce72f -25.39%, #df52f5 114.43%);
+  -webkit-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+  z-index: -1000;
+}
+
+.btn--gradient-disabled {
+  background: -o-linear-gradient(4.27deg, #fcb42f -25.39%, #cb34e3 114.43%);
+  background: linear-gradient(85.73deg, #fcb42f -25.39%, #cb34e3 114.43%);
+  opacity: 0.4;
+  pointer-events: none;
 }
 
 .btn--gradient.btn--promo {
@@ -2966,7 +2993,7 @@ button,
 
 .nft-objects__img {
   max-width: 490px;
-  min-height: 212px;
+  height: 212px;
   padding: 14px 16px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -3159,18 +3186,18 @@ button,
   z-index: 10;
   max-width: 1180px;
   margin: 0;
-  padding: 50px 55px;
+  padding: 40px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[6];
   grid-template-columns: repeat(6, auto);
-  gap: 20px;
   background-color: rgba(255, 255, 255, 0.06);
   border-radius: 30px;
   list-style: none;
 }
 
 .meta-companies__list .card-item {
+  margin: 10px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3796,7 +3823,7 @@ button,
 
 .cases {
   position: relative;
-  margin-bottom: 104px;
+  margin-bottom: 45px;
   padding: 84px 0 96px;
   background-color: #0d255d;
 }
@@ -3850,6 +3877,9 @@ button,
   width: 100%;
   height: auto;
   margin-bottom: 10px;
+  -webkit-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
 }
 
 .cases__img-bg {
@@ -4631,13 +4661,13 @@ button,
 
 .form .custom-toggle__label a {
   color: #255ce7;
+  -webkit-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
 }
 
 .form .custom-toggle__label a:hover {
   opacity: 0.6;
-  -webkit-transition: opacity 0.6s ease;
-  -o-transition: opacity 0.6s ease;
-  transition: opacity 0.6s ease;
 }
 
 .form__btn {
@@ -4650,13 +4680,13 @@ button,
   color: #ffffff;
   background-color: #255ce7;
   border-radius: 100px;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
 }
 
 .form__btn:hover {
   background-color: #4176fd;
-  -webkit-transition: background-color 0.6s ease;
-  -o-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease;
 }
 
 .form__btn:focus {
@@ -5178,9 +5208,7 @@ button,
   text-align: left;
 }
 
-.transparent-benefits__list .title--sn,
-.transparent-benefits__list .title--dn,
-.transparent-benefits__list .title--dng {
+.transparent-benefits__list .title:first-child {
   margin: 0 0 31px -36px;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -5195,17 +5223,17 @@ button,
   border-top-left-radius: 30px;
 }
 
-.transparent-benefits__list .title--sn {
+.card-item--sn .title:first-child {
   background: -o-linear-gradient(4.2deg, #5f8cff -25.03%, #cb34e3 112.81%);
   background: linear-gradient(85.8deg, #5f8cff -25.03%, #cb34e3 112.81%);
 }
 
-.transparent-benefits__list .title--dn {
+.card-item--dn .title:first-child {
   background: -o-linear-gradient(6.49deg, #55e6b1 -40.59%, #3465e3 104.85%);
   background: linear-gradient(83.51deg, #55e6b1 -40.59%, #3465e3 104.85%);
 }
 
-.transparent-benefits__list .title--dng {
+.card-item--dng .title:first-child {
   background: -o-linear-gradient(4.2deg, #ffac5f -25.03%, #fb42b1 112.81%);
   background: linear-gradient(85.8deg, #ffac5f -25.03%, #fb42b1 112.81%);
 }
@@ -5218,7 +5246,7 @@ button,
   padding-left: 17px;
 }
 
-.card-item__text svg {
+.transparent-benefits__list svg {
   position: absolute;
   top: 11px;
   left: 0;
@@ -5583,6 +5611,7 @@ button,
 
 .promo {
   margin-bottom: 104px;
+  padding-top: 60px;
 }
 
 .promo br {
@@ -5743,13 +5772,16 @@ button,
     box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
   }
 
-  .btn--gradient:hover,
-  .btn--gradient:focus {
-    background-image: -o-linear-gradient(4.27deg, #fce72f -25.39%, #df52f5 114.43%);
-    background-image: linear-gradient(85.73deg, #fce72f -25.39%, #df52f5 114.43%);
+  .btn--gradient:hover::before,
+  .btn--gradient:focus::before,
+  .btn--gradient:active::before {
+    opacity: 1;
+    -webkit-transition: opacity 0.6s ease;
+    -o-transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease;
   }
 
-  .btn--gradient:focus {
+  .btn--gradient:active::before {
     -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
   }
@@ -5768,6 +5800,9 @@ button,
   .cases__link:focus {
     color: #ffffff;
     opacity: 0.7;
+    -webkit-transition: opacity 0.6s ease;
+    -o-transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease;
   }
 
   .footer-menu__link:hover,
@@ -5853,7 +5888,7 @@ button,
   }
 
   .cases {
-    margin-bottom: 77px;
+    margin-bottom: 17px;
     padding: 56px 0 63px;
   }
 
@@ -6065,7 +6100,7 @@ button,
 
   .nft-objects__img {
     max-width: 416px;
-    min-height: 180px;
+    height: 180px;
   }
 
   .nft-objects__date p {
@@ -6116,7 +6151,7 @@ button,
   }
 
   .meta-companies__list {
-    padding: 41px 40px 46px;
+    padding: 30px 24px 36px;
   }
 
   .meta-companies__list .card-item--apple svg {
@@ -6308,8 +6343,8 @@ button,
   }
 
   .cases {
-    margin-bottom: 68px;
-    padding: 60px 0 65px;
+    margin-bottom: 8px;
+    padding: 60px 0 62px;
   }
 
   .cases__item {
@@ -6583,9 +6618,7 @@ button,
     margin-bottom: 6px;
   }
 
-  .transparent-benefits__list .title--sn,
-  .transparent-benefits__list .title--dn,
-  .transparent-benefits__list .title--dng {
+  .transparent-benefits__list .title:first-child {
     min-width: 120px;
     margin: 0 0 23px -30px;
     padding: 12px 15px 10px 27px;
@@ -6595,7 +6628,7 @@ button,
     border-top-left-radius: 20px;
   }
 
-  .transparent-benefits__list .title--sn {
+  .card-item--sn .title:first-child {
     padding-left: 26px;
   }
 
@@ -6610,7 +6643,7 @@ button,
     padding-left: 18px;
   }
 
-  .card-item__text svg {
+  .transparent-benefits__list svg {
     top: 9px;
   }
 
@@ -7130,7 +7163,7 @@ button,
   }
 
   .intro {
-    margin-bottom: 77px;
+    margin-bottom: 81px;
   }
 
   .intro__title {
@@ -7204,7 +7237,7 @@ button,
 
   .nft-objects__img {
     max-width: 326px;
-    min-height: 140px;
+    height: 140px;
     padding: 10px;
   }
 
@@ -7279,7 +7312,7 @@ button,
   }
 
   .meta-companies__list {
-    padding: 33px 37px;
+    padding: 24px 22px;
   }
 
   .meta-companies__list .card-item--apple svg {
@@ -7516,7 +7549,7 @@ button,
   }
 
   .cases {
-    margin-bottom: 59px;
+    margin-bottom: 0;
     padding: 43px 0 47px;
   }
 
@@ -8013,9 +8046,7 @@ button,
     margin-bottom: 9px;
   }
 
-  .transparent-benefits__list .title--sn,
-  .transparent-benefits__list .title--dn,
-  .transparent-benefits__list .title--dng {
+  .transparent-benefits__list .title:first-child {
     min-width: 110px;
     margin: 0 0 21px -25px;
     padding: 11px 15px 8px 27px;
@@ -8023,7 +8054,7 @@ button,
     line-height: 21px;
   }
 
-  .transparent-benefits__list .title--sn {
+  .card-item--sn .title:first-child {
     padding-left: 26px;
   }
 
@@ -8031,11 +8062,11 @@ button,
     margin-bottom: 8px;
   }
 
-  .card-item--dng .title--dng {
+  .card-item--dng .title:first-child {
     margin-bottom: 20px;
   }
 
-  .card-item__text svg {
+  .transparent-benefits__list svg {
     top: 8px;
   }
 
@@ -8901,7 +8932,7 @@ button,
 
   .nft-objects__img {
     max-width: 100%;
-    min-height: 130px;
+    height: 130px;
     margin-right: 0;
     border-radius: 15px;
   }
@@ -9004,7 +9035,7 @@ button,
   }
 
   .meta-companies {
-    padding-bottom: 17px;
+    padding-bottom: 20px;
   }
 
   .meta-companies img {
@@ -9013,7 +9044,7 @@ button,
   }
 
   .meta-companies__text {
-    margin: 0 0 8px;
+    margin: 0 0 10px;
     padding-right: 20px;
     font-weight: 700;
     font-size: 16px;
@@ -9022,9 +9053,12 @@ button,
   }
 
   .meta-companies__list {
-    margin: 0;
-    padding: 23px 10px;
-    gap: 15px;
+    padding: 12px 0;
+    border-radius: 20px;
+  }
+
+  .meta-companies__list .card-item {
+    margin: 8px;
   }
 
   .meta-companies__list .card-item--apple svg {
@@ -9142,7 +9176,6 @@ button,
   }
 
   .cases {
-    margin-bottom: 20px;
     padding: 21px 0 31px;
   }
 
@@ -9673,7 +9706,8 @@ button,
     position: absolute;
     bottom: -1px;
     left: 0;
-    min-width: 100%;
+    width: 100%;
+    min-width: 100vw;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.15);
   }
@@ -9861,15 +9895,12 @@ button,
     margin-bottom: 6px;
   }
 
-  .transparent-benefits__list .title--sn,
-  .transparent-benefits__list .title--dn,
-  .transparent-benefits__list .title--dng {
+  .transparent-benefits__list .title:first-child {
     margin: 0 0 12px -20px;
     padding: 8px 15px 7px 26px;
   }
 
-  .transparent-benefits__list .title--dn,
-  .transparent-benefits__list .title--dng {
+  .card-item--dn .title:first-child {
     padding-left: 27px;
   }
 
@@ -9877,8 +9908,9 @@ button,
     margin-bottom: 5px;
   }
 
-  .card-item--dng .title--dng {
+  .card-item--dng .title:first-child {
     margin-bottom: 11px;
+    padding-left: 27px;
   }
 
   .transparent-benefits__list .card-item__text {
@@ -9893,7 +9925,7 @@ button,
     transform: translateX(-1px);
   }
 
-  .card-item__text svg {
+  .transparent-benefits__list svg {
     top: 7px;
   }
 
@@ -10105,6 +10137,7 @@ button,
 
   .promo {
     margin-bottom: 30px;
+    padding-top: 22px;
   }
 
   .promo__title {
@@ -10171,6 +10204,17 @@ button,
 
   .nft-objects__list .card-item svg {
     margin-bottom: 0;
+  }
+
+  .meta-companies__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .create .title--h3 {
@@ -10473,17 +10517,6 @@ button,
 }
 
 @media (max-width: 479px) {
-  .meta-companies__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
   .create .title--h3 {
     max-width: 267px;
     text-align: left;
