@@ -117,12 +117,12 @@
     <div class="wrapper">
       <header class="header">
         <div class="container container--no-padding header__inner">
-          <button class="header__nav-toggle" type="button" data-nav-open aria-label="Переключатель отображения меню" aria-pressed="false">
+          <button class="header__nav-toggle" type="button" data-nav-open aria-label="Открыть меню">
             <svg width="32" height="16" aria-hidden="true">
               <use xlink:href="#icon-burger"></use>
             </svg>
           </button>
-          <div class="header__logo"><a href="index.html" aria-label="На главную"><img src="img/svg/logo.svg" width="194" height="24" alt="Логотип Aurora"></a>
+          <div class="header__logo"><a class="logo" href="index.html" aria-label="Перейти на главную страницу"><img src="img/svg/logo.svg" width="194" height="24" alt="Логотип Aurora"></a>
           </div>
           <nav class="main-nav header__nav" data-main-nav>
             <div class="main-nav__wrapper" data-nav-block>
@@ -133,7 +133,7 @@
               </button>
               <div class="main-nav__inner" data-nav-list>
                 <ul class="main-nav__list">
-                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a href="industry.html"><span>Отраслевые решения</span></a>
+                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a class="main-nav__link" href="industry.html">Отраслевые решения</a>
                     <button class="main-nav__dropdown-toggle" type="button" data-dropdown-toggle="0" aria-label="Раскрыть/Скрыть">
                       <svg width="12" height="7" aria-hidden="true">
                         <use xlink:href="#icon-bracket-bottom"></use>
@@ -141,18 +141,18 @@
                     </button>
                     <div class="main-nav__dropdown" data-dropdown="0" hidden>
                       <ul class="main-nav__dropdown-list">
-                        <li class="main-nav__dropdown-item"><a href="industry-construction.html">Строительство</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Инженерная отрасль</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Самолетостроение</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Нефтегазовая отрасль</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Инфраструктура</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Кораблестроение</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Развлекательная отрасль</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Складская отрасль</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="industry-construction.html">Строительство</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Инженерная отрасль</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Самолетостроение</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Нефтегазовая отрасль</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Инфраструктура</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Кораблестроение</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Развлекательная отрасль</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Складская отрасль</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a href="catalog.html"><span>Каталог</span></a>
+                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a class="main-nav__link" href="catalog.html">Каталог</a>
                     <button class="main-nav__dropdown-toggle" type="button" data-dropdown-toggle="1" aria-label="Раскрыть/Скрыть">
                       <svg width="12" height="7" aria-hidden="true">
                         <use xlink:href="#icon-bracket-bottom"></use>
@@ -160,15 +160,15 @@
                     </button>
                     <div class="main-nav__dropdown" data-dropdown="1" hidden>
                       <ul class="main-nav__dropdown-list">
-                        <li class="main-nav__dropdown-item"><a href="#">Все подъемники</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Ножничные подъемники</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Ножничные подъемники <br>повышенной проходимости</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Коленчатые подъемники</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Телескопические подъемники</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Все подъемники</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Ножничные подъемники</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Ножничные подъемники <br>повышенной проходимости</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Коленчатые подъемники</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Телескопические подъемники</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a href="#"><span>Сервис и запчасти</span></a>
+                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a class="main-nav__link" href="#">Сервис и запчасти</a>
                     <button class="main-nav__dropdown-toggle" type="button" data-dropdown-toggle="2" aria-label="Раскрыть/Скрыть">
                       <svg width="12" height="7" aria-hidden="true">
                         <use xlink:href="#icon-bracket-bottom"></use>
@@ -176,15 +176,15 @@
                     </button>
                     <div class="main-nav__dropdown" data-dropdown="2" hidden>
                       <ul class="main-nav__dropdown-list">
-                        <li class="main-nav__dropdown-item"><a href="#">Сервисные центры</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Техническое обслуживание и <br>ремонт</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Запасные части</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Сервисные центры</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Техническое обслуживание и <br>ремонт</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Запасные части</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="main-nav__item"><a href="#"><span>Партнерам</span></a>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Партнерам</a>
                   </li>
-                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a href="#"><span>О компании</span></a>
+                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a class="main-nav__link" href="#">О компании</a>
                     <button class="main-nav__dropdown-toggle" type="button" data-dropdown-toggle="4" aria-label="Раскрыть/Скрыть">
                       <svg width="12" height="7" aria-hidden="true">
                         <use xlink:href="#icon-bracket-bottom"></use>
@@ -192,13 +192,13 @@
                     </button>
                     <div class="main-nav__dropdown" data-dropdown="4" hidden>
                       <ul class="main-nav__dropdown-list">
-                        <li class="main-nav__dropdown-item"><a href="#">О бренде LGMG</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Пресс-центр</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Презентации</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">О бренде LGMG</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Пресс-центр</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Презентации</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="main-nav__item"><a href="#"><span>Контакты</span></a>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -287,7 +287,7 @@
         </div>
       </header>
       <main>
-        <section class="main-header main-header--catalog main-header--product">
+        <section class="main-header main-header--no-bb main-header--min-mb">
           <div class="container">
             <div class="breadcrumbs">
               <ul class="breadcrumbs__list">
@@ -298,80 +298,70 @@
                 <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link--current">Продажа подъемников</span></li>
               </ul>
             </div>
-            <h1 class="title title--h1 main-header__title">Ножничный подъемник Zoomlion ZS0608HD-LI</h1>
+            <h1 class="title title--h1 main-header__title title--h1 main-header__title--no-mb">Ножничный подъемник Zoomlion ZS0608HD-LI</h1>
           </div>
         </section>
-        <section class="main-content main-content--product">
+        <section class="main-content main-content--no-mt">
           <h2 class="visually-hidden">Подробная информация о товаре</h2>
-          <div class="container main-content__wrapper accordion" data-accordion="parent" data-single data-close-inner>
-            <div class="main-content__sidebar sidebar accordion__element" data-accordion="element">
-              <button class="btn sidebar__btn accordion__button" type="button" data-accordion="button">Категории каталога
-                <svg width="32" height="16" aria-hidden="true">
-                  <use xlink:href="#icon-burger"></use>
-                </svg>
-              </button>
-              <div class="accordion__content" data-accordion="content">
-                <div class="sidebar__container accordion" data-accordion="parent" data-single>
-                  <div class="sidebar__wrapper">
-                    <div class="sidebar__list accordion__element" data-accordion="element">
-                      <button class="sidebar__button accordion__button" type="button" data-accordion="button">Продажа
-                        <svg class="sidebar__icon" width="12" height="7" aria-hidden="true">
-                          <use xlink:href="#icon-bracket-bottom"></use>
-                        </svg>
-                      </button>
-                      <ul class="sidebar__sublist accordion__content" data-accordion="content">
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+          <div class="container main-content__wrapper">
+            <div class="accordion accordion--sidebar" data-accordion="parent" data-single data-close-inner>
+              <div class="main-content__sidebar sidebar accordion__element" data-accordion="element">
+                <button class="btn sidebar__btn accordion__button" type="button" data-accordion="button">Категории каталога
+                  <svg width="32" height="16" aria-hidden="true">
+                    <use xlink:href="#icon-burger"></use>
+                  </svg>
+                </button>
+                <div class="sidebar__content accordion__content" data-accordion="content">
+                  <div class="sidebar__container accordion" data-accordion="parent" data-single>
+                    <div class="sidebar__wrapper">
+                      <div class="sidebar__list accordion__element" data-accordion="element">
+                        <button class="sidebar__button accordion__button" type="button" data-accordion="button">Продажа
+                          <svg class="sidebar__icon" width="12" height="7" aria-hidden="true">
+                            <use xlink:href="#icon-bracket-bottom"></use>
+                          </svg>
+                        </button>
+                        <ul class="sidebar__sublist accordion__content" data-accordion="content">
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Ножничные подъемники</span></a>
-                        </li>
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+                              </svg>Ножничные подъемники</a>
+                          </li>
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Коленчатые подъемники</span></a>
-                        </li>
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+                              </svg>Коленчатые подъемники</a>
+                          </li>
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Телескопиеские  подъемники</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="sidebar__list accordion__element" data-accordion="element">
-                      <button class="sidebar__button accordion__button" type="button" data-accordion="button">Аренда
-                        <svg class="sidebar__icon" width="12" height="7" aria-hidden="true">
-                          <use xlink:href="#icon-bracket-bottom"></use>
-                        </svg>
-                      </button>
-                      <ul class="sidebar__sublist accordion__content" data-accordion="content">
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+                              </svg>Телескопиеские  подъемники</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="sidebar__list accordion__element" data-accordion="element">
+                        <button class="sidebar__button accordion__button" type="button" data-accordion="button">Аренда
+                          <svg class="sidebar__icon" width="12" height="7" aria-hidden="true">
+                            <use xlink:href="#icon-bracket-bottom"></use>
+                          </svg>
+                        </button>
+                        <ul class="sidebar__sublist accordion__content" data-accordion="content">
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Ножничные подъемники</span></a>
-                        </li>
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+                              </svg>Ножничные подъемники</a>
+                          </li>
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Коленчатые подъемники</span></a>
-                        </li>
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+                              </svg>Коленчатые подъемники</a>
+                          </li>
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Телескопиеские  подъемники</span></a>
-                        </li>
-                      </ul>
+                              </svg>Телескопиеские  подъемники</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -867,10 +857,10 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer container container--no-padding">
         <div class="footer__contacts">
           <div class="footer__contacts-inner">
-            <div class="footer__logo"><a href="index.html" aria-label="Перейти на главную страницу"><img src="img/svg/logo.svg" width="194" height="24" alt="Логотип Aurora"></a>
+            <div class="footer__logo"><a class="logo" href="index.html" aria-label="Перейти на главную страницу"><img src="img/svg/logo.svg" width="194" height="24" alt="Логотип Aurora"></a>
             </div>
             <ul class="footer__contacts-list">
               <li class="footer__contacts-item"><a class="control control--phone control--footer" href="tel:+78000000000" aria-label="Телефон">

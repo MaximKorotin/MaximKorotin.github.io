@@ -117,12 +117,12 @@
     <div class="wrapper">
       <header class="header">
         <div class="container container--no-padding header__inner">
-          <button class="header__nav-toggle" type="button" data-nav-open aria-label="Переключатель отображения меню" aria-pressed="false">
+          <button class="header__nav-toggle" type="button" data-nav-open aria-label="Открыть меню">
             <svg width="32" height="16" aria-hidden="true">
               <use xlink:href="#icon-burger"></use>
             </svg>
           </button>
-          <div class="header__logo"><a href="index.html" aria-label="На главную"><img src="img/svg/logo.svg" width="194" height="24" alt="Логотип Aurora"></a>
+          <div class="header__logo"><a class="logo" href="index.html" aria-label="Перейти на главную страницу"><img src="img/svg/logo.svg" width="194" height="24" alt="Логотип Aurora"></a>
           </div>
           <nav class="main-nav header__nav" data-main-nav>
             <div class="main-nav__wrapper" data-nav-block>
@@ -133,7 +133,7 @@
               </button>
               <div class="main-nav__inner" data-nav-list>
                 <ul class="main-nav__list">
-                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a href="industry.html"><span>Отраслевые решения</span></a>
+                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a class="main-nav__link" href="industry.html">Отраслевые решения</a>
                     <button class="main-nav__dropdown-toggle" type="button" data-dropdown-toggle="0" aria-label="Раскрыть/Скрыть">
                       <svg width="12" height="7" aria-hidden="true">
                         <use xlink:href="#icon-bracket-bottom"></use>
@@ -141,18 +141,18 @@
                     </button>
                     <div class="main-nav__dropdown" data-dropdown="0" hidden>
                       <ul class="main-nav__dropdown-list">
-                        <li class="main-nav__dropdown-item"><a href="industry-construction.html">Строительство</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Инженерная отрасль</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Самолетостроение</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Нефтегазовая отрасль</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Инфраструктура</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Кораблестроение</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Развлекательная отрасль</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Складская отрасль</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="industry-construction.html">Строительство</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Инженерная отрасль</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Самолетостроение</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Нефтегазовая отрасль</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Инфраструктура</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Кораблестроение</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Развлекательная отрасль</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Складская отрасль</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a href="catalog.html"><span>Каталог</span></a>
+                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a class="main-nav__link" href="catalog.html">Каталог</a>
                     <button class="main-nav__dropdown-toggle" type="button" data-dropdown-toggle="1" aria-label="Раскрыть/Скрыть">
                       <svg width="12" height="7" aria-hidden="true">
                         <use xlink:href="#icon-bracket-bottom"></use>
@@ -160,15 +160,15 @@
                     </button>
                     <div class="main-nav__dropdown" data-dropdown="1" hidden>
                       <ul class="main-nav__dropdown-list">
-                        <li class="main-nav__dropdown-item"><a href="#">Все подъемники</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Ножничные подъемники</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Ножничные подъемники <br>повышенной проходимости</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Коленчатые подъемники</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Телескопические подъемники</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Все подъемники</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Ножничные подъемники</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Ножничные подъемники <br>повышенной проходимости</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Коленчатые подъемники</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Телескопические подъемники</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a href="#"><span>Сервис и запчасти</span></a>
+                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a class="main-nav__link" href="#">Сервис и запчасти</a>
                     <button class="main-nav__dropdown-toggle" type="button" data-dropdown-toggle="2" aria-label="Раскрыть/Скрыть">
                       <svg width="12" height="7" aria-hidden="true">
                         <use xlink:href="#icon-bracket-bottom"></use>
@@ -176,15 +176,15 @@
                     </button>
                     <div class="main-nav__dropdown" data-dropdown="2" hidden>
                       <ul class="main-nav__dropdown-list">
-                        <li class="main-nav__dropdown-item"><a href="#">Сервисные центры</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Техническое обслуживание и <br>ремонт</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Запасные части</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Сервисные центры</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Техническое обслуживание и <br>ремонт</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Запасные части</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="main-nav__item"><a href="#"><span>Партнерам</span></a>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Партнерам</a>
                   </li>
-                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a href="#"><span>О компании</span></a>
+                  <li class="main-nav__item main-nav__item-dropdown js-main-nav-item-dropdown"><a class="main-nav__link" href="#">О компании</a>
                     <button class="main-nav__dropdown-toggle" type="button" data-dropdown-toggle="4" aria-label="Раскрыть/Скрыть">
                       <svg width="12" height="7" aria-hidden="true">
                         <use xlink:href="#icon-bracket-bottom"></use>
@@ -192,13 +192,13 @@
                     </button>
                     <div class="main-nav__dropdown" data-dropdown="4" hidden>
                       <ul class="main-nav__dropdown-list">
-                        <li class="main-nav__dropdown-item"><a href="#">О бренде LGMG</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Пресс-центр</a></li>
-                        <li class="main-nav__dropdown-item"><a href="#">Презентации</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">О бренде LGMG</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Пресс-центр</a></li>
+                        <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Презентации</a></li>
                       </ul>
                     </div>
                   </li>
-                  <li class="main-nav__item"><a href="#"><span>Контакты</span></a>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -287,7 +287,7 @@
         </div>
       </header>
       <main>
-        <section class="main-header main-header--catalog">
+        <section class="main-header main-header--no-bb">
           <div class="container">
             <div class="breadcrumbs">
               <ul class="breadcrumbs__list">
@@ -297,764 +297,698 @@
               </ul>
             </div>
             <h1 class="title title--h1 main-header__title">Аренда подъемников</h1>
-            <p class="main-header__description">Мы представляем широкий ассортимент подъемников от ведущих мировых производителей.</p><a class="main-header__link" href="#" download aria-label="Download catalog">
-              <div class="main-header__icon">
-                <svg width="27" height="27" aria-hidden="true">
-                  <use xlink:href="#icon-download"></use>
-                </svg>
-              </div><span>Получить каталог <br>(PDF)</span></a>
+            <p class="main-header__description">Мы представляем широкий ассортимент подъемников от ведущих мировых производителей.</p><a class="main-header__link" href="#" download aria-label="Download catalog">Получить каталог (PDF)
+              <svg class="main-header__icon" width="27" height="27" aria-hidden="true">
+                <use xlink:href="#icon-download"></use>
+              </svg></a>
           </div>
         </section>
-        <section class="main-content main-content--rent">
-          <h2 class="visually-hidden">Construction industry directory</h2>
+        <section class="main-content">
+          <h2 class="visually-hidden">Каталог подъемников, раздел аренда.</h2>
           <div class="overlay"></div>
-          <div class="container main-content__wrapper accordion" data-accordion="parent" data-single data-close-inner>
-            <div class="main-content__sidebar sidebar accordion__element" data-accordion="element">
-              <button class="btn sidebar__btn accordion__button" type="button" data-accordion="button">Категории каталога
-                <svg width="32" height="16" aria-hidden="true">
-                  <use xlink:href="#icon-burger"></use>
-                </svg>
-              </button>
-              <div class="sidebar__content accordion__content" data-accordion="content">
-                <div class="sidebar__container accordion" data-accordion="parent" data-single>
-                  <div class="sidebar__wrapper">
-                    <div class="sidebar__list accordion__element" data-accordion="element">
-                      <button class="sidebar__button accordion__button" type="button" data-accordion="button">Продажа
-                        <svg class="sidebar__icon" width="12" height="7" aria-hidden="true">
-                          <use xlink:href="#icon-bracket-bottom"></use>
-                        </svg>
-                      </button>
-                      <ul class="sidebar__sublist accordion__content" data-accordion="content">
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+          <div class="container main-content__wrapper">
+            <div class="accordion accordion--sidebar" data-accordion="parent" data-single data-close-inner>
+              <div class="main-content__sidebar sidebar accordion__element" data-accordion="element">
+                <button class="btn sidebar__btn accordion__button" type="button" data-accordion="button">Категории каталога
+                  <svg width="32" height="16" aria-hidden="true">
+                    <use xlink:href="#icon-burger"></use>
+                  </svg>
+                </button>
+                <div class="sidebar__content accordion__content" data-accordion="content">
+                  <div class="sidebar__container accordion" data-accordion="parent" data-single>
+                    <div class="sidebar__wrapper">
+                      <div class="sidebar__list accordion__element" data-accordion="element">
+                        <button class="sidebar__button accordion__button" type="button" data-accordion="button">Продажа
+                          <svg class="sidebar__icon" width="12" height="7" aria-hidden="true">
+                            <use xlink:href="#icon-bracket-bottom"></use>
+                          </svg>
+                        </button>
+                        <ul class="sidebar__sublist accordion__content" data-accordion="content">
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Ножничные подъемники</span></a>
-                        </li>
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+                              </svg>Ножничные подъемники</a>
+                          </li>
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Коленчатые подъемники</span></a>
-                        </li>
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+                              </svg>Коленчатые подъемники</a>
+                          </li>
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Телескопиеские  подъемники</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="sidebar__list accordion__element is-active" data-accordion="element">
-                      <button class="sidebar__button accordion__button" type="button" data-accordion="button">Аренда
-                        <svg class="sidebar__icon" width="12" height="7" aria-hidden="true">
-                          <use xlink:href="#icon-bracket-bottom"></use>
-                        </svg>
-                      </button>
-                      <ul class="sidebar__sublist accordion__content" data-accordion="content">
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+                              </svg>Телескопиеские  подъемники</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="sidebar__list accordion__element is-active" data-accordion="element">
+                        <button class="sidebar__button accordion__button" type="button" data-accordion="button">Аренда
+                          <svg class="sidebar__icon" width="12" height="7" aria-hidden="true">
+                            <use xlink:href="#icon-bracket-bottom"></use>
+                          </svg>
+                        </button>
+                        <ul class="sidebar__sublist accordion__content" data-accordion="content">
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Ножничные подъемники</span></a>
-                        </li>
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+                              </svg>Ножничные подъемники</a>
+                          </li>
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Коленчатые подъемники</span></a>
-                        </li>
-                        <li class="sublist-item"><a class="sublist-item__link" href="#">
-                            <div class="sublist-item__icon">
-                              <svg width="7" height="12" aria-hidden="true">
+                              </svg>Коленчатые подъемники</a>
+                          </li>
+                          <li class="sublist-item"><a class="sublist-item__link" href="#">
+                              <svg class="sublist-item__icon" width="7" height="12" aria-hidden="true">
                                 <use xlink:href="#icon-bracket-right"></use>
-                              </svg>
-                            </div><span>Телескопиеские  подъемники</span></a>
-                        </li>
-                      </ul>
+                              </svg>Телескопиеские  подъемники</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="main-content__filters filters">
-              <div class="filters__toggle">
-                <button class="btn filters__toggle-btn">Фильтры</button>
+              <button class="btn filters__btn" type="button">Фильтры
                 <svg width="12" height="7" aria-hidden="true">
                   <use xlink:href="#icon-bracket-bottom"></use>
                 </svg>
-              </div>
+              </button>
               <div class="filters__wrapper">
                 <div class="filters__section">
-                  <section class="industry-filters">
-                    <h2 class="visually-hidden">Filters is industry</h2>
-                    <div class="container">
-                      <form class="industry-filters__form form-filters" action="#" method="get">
-                        <ul class="form-filters__list">
-                          <li class="form-filters__item filters-item filters-item--1" data-parent="brands">
-                            <div class="filters-item__wrapper">
-                              <h3 class="filters-item__title">Бренды</h3>
-                              <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
-                                <use xlink:href="#icon-bracket-bottom"></use>
-                              </svg>
-                            </div>
-                            <ul class="active-icons">
-                              <li class="active-icon active-icon--brands" data-category="brands" data-parent="lgmg"><span class="active-icon__title">lgmg</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--brands" data-category="brands" data-parent="zoomlion"><span class="active-icon__title">zoomlion</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--brands" data-category="brands" data-parent="haulotte"><span class="active-icon__title">haulotte</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--brands" data-category="brands" data-parent="genie"><span class="active-icon__title">genie</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--brands" data-category="brands" data-parent="manitou"><span class="active-icon__title">manitou</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--brands" data-category="brands" data-parent="magni"><span class="active-icon__title">magni</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--brands" data-category="brands" data-parent="dingli"><span class="active-icon__title">dingli</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--brands" data-category="brands" data-parent="goman"><span class="active-icon__title">goman</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--brands" data-category="brands" data-parent="platform"><span class="active-icon__title">platform</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--brands" data-category="brands" data-parent="nifty"><span class="active-icon__title">nifty</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--brands" data-category="brands" data-parent="jlg"><span class="active-icon__title">jlg</span><span class="active-icon__icon"></span>
-                              </li>
-                            </ul>
-                            <ul class="filters-item__sublist brands-sublist">
-                              <li class="brands-item brands-item--lgmg-sublist" data-parent="lgmg">
-                                <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                  <div class="container">
+                    <form action="#" method="get">
+                      <ul class="form-filters">
+                        <li class="form-filters__item filters-item filters-item--1" data-parent="brands">
+                          <button class="btn filters-item__btn" type="button">Бренды
+                            <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
+                              <use xlink:href="#icon-bracket-bottom"></use>
+                            </svg>
+                          </button>
+                          <ul class="active-icons">
+                            <li class="active-icon active-icon--brands" data-category="brands" data-parent="lgmg"><span class="active-icon__title">lgmg</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--brands" data-category="brands" data-parent="zoomlion"><span class="active-icon__title">zoomlion</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--brands" data-category="brands" data-parent="haulotte"><span class="active-icon__title">haulotte</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--brands" data-category="brands" data-parent="genie"><span class="active-icon__title">genie</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--brands" data-category="brands" data-parent="manitou"><span class="active-icon__title">manitou</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--brands" data-category="brands" data-parent="magni"><span class="active-icon__title">magni</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--brands" data-category="brands" data-parent="dingli"><span class="active-icon__title">dingli</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--brands" data-category="brands" data-parent="goman"><span class="active-icon__title">goman</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--brands" data-category="brands" data-parent="platform"><span class="active-icon__title">platform</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--brands" data-category="brands" data-parent="nifty"><span class="active-icon__title">nifty</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--brands" data-category="brands" data-parent="jlg"><span class="active-icon__title">jlg</span><span class="active-icon__icon"></span>
+                            </li>
+                          </ul>
+                          <ul class="filters-item__sublist brands-sublist">
+                            <li class="brands-item brands-item--lgmg-sublist" data-parent="lgmg">
+                              <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                                  <svg width="34" height="15" aria-hidden="true">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                  </svg></a>
+                                <div class="logo-wrapper logo-wrapper--lgmg-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
+                                <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
+                                <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="lgmg-sublist" name="brands" value="lgmg"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="lgmg">Сайт представительства
                                     <svg width="34" height="15" aria-hidden="true">
                                       <use xlink:href="#icon-arrow-right"></use>
                                     </svg></a>
-                                  <div class="logo-wrapper logo-wrapper--lgmg-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
-                                    <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
-                                    <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="lgmg-sublist" name="brands" value="lgmg"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="lgmg">Сайт представительства
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--zoomlion-sublist" data-parent="zoomlion">
-                                <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--zoomlion-sublist" data-parent="zoomlion">
+                              <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                                  <svg width="34" height="15" aria-hidden="true">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                  </svg></a>
+                                <div class="logo-wrapper logo-wrapper--zoomlion-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
+                                <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
+                                <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="zoomlion-sublist" name="brands" value="zoomlion"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="zoomlion">Сайт представительства
                                     <svg width="34" height="15" aria-hidden="true">
                                       <use xlink:href="#icon-arrow-right"></use>
                                     </svg></a>
-                                  <div class="logo-wrapper logo-wrapper--zoomlion-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
-                                    <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
-                                    <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="zoomlion-sublist" name="brands" value="zoomlion"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="zoomlion">Сайт представительства
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--haulotte-sublist" data-parent="haulotte">
-                                <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--haulotte-sublist" data-parent="haulotte">
+                              <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                                  <svg width="34" height="15" aria-hidden="true">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                  </svg></a>
+                                <div class="logo-wrapper logo-wrapper--haulotte-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
+                                <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
+                                <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="haulotte-sublist" name="brands" value="haulotte"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="haulotte">Сайт представительства
                                     <svg width="34" height="15" aria-hidden="true">
                                       <use xlink:href="#icon-arrow-right"></use>
                                     </svg></a>
-                                  <div class="logo-wrapper logo-wrapper--haulotte-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
-                                    <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
-                                    <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="haulotte-sublist" name="brands" value="haulotte"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="haulotte">Сайт представительства
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--genie-sublist" data-parent="genie">
-                                <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--genie-sublist" data-parent="genie">
+                              <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                                  <svg width="34" height="15" aria-hidden="true">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                  </svg></a>
+                                <div class="logo-wrapper logo-wrapper--genie-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
+                                <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
+                                <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="genie-sublist" name="brands" value="genie"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="genie">Сайт представительства
                                     <svg width="34" height="15" aria-hidden="true">
                                       <use xlink:href="#icon-arrow-right"></use>
                                     </svg></a>
-                                  <div class="logo-wrapper logo-wrapper--genie-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
-                                    <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
-                                    <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="genie-sublist" name="brands" value="genie"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="genie">Сайт представительства
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--manitou-sublist" data-parent="manitou">
-                                <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--manitou-sublist" data-parent="manitou">
+                              <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                                  <svg width="34" height="15" aria-hidden="true">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                  </svg></a>
+                                <div class="logo-wrapper logo-wrapper--manitou-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
+                                <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
+                                <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="manitou-sublist" name="brands" value="manitou"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="manitou">Сайт представительства
                                     <svg width="34" height="15" aria-hidden="true">
                                       <use xlink:href="#icon-arrow-right"></use>
                                     </svg></a>
-                                  <div class="logo-wrapper logo-wrapper--manitou-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
-                                    <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
-                                    <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="manitou-sublist" name="brands" value="manitou"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="manitou">Сайт представительства
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--magni-sublist" data-parent="magni">
-                                <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--magni-sublist" data-parent="magni">
+                              <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                                  <svg width="34" height="15" aria-hidden="true">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                  </svg></a>
+                                <div class="logo-wrapper logo-wrapper--magni-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
+                                <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
+                                <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="magni-sublist" name="brands" value="magni"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="magni">Сайт представительства
                                     <svg width="34" height="15" aria-hidden="true">
                                       <use xlink:href="#icon-arrow-right"></use>
                                     </svg></a>
-                                  <div class="logo-wrapper logo-wrapper--magni-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
-                                    <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
-                                    <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="magni-sublist" name="brands" value="magni"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="magni">Сайт представительства
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--dingli-sublist" data-parent="dingli">
-                                <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--dingli-sublist" data-parent="dingli">
+                              <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                                  <svg width="34" height="15" aria-hidden="true">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                  </svg></a>
+                                <div class="logo-wrapper logo-wrapper--dingli-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
+                                <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
+                                <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="dingli-sublist" name="brands" value="dingli"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="dingli">Сайт представительства
                                     <svg width="34" height="15" aria-hidden="true">
                                       <use xlink:href="#icon-arrow-right"></use>
                                     </svg></a>
-                                  <div class="logo-wrapper logo-wrapper--dingli-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
-                                    <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
-                                    <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="dingli-sublist" name="brands" value="dingli"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="dingli">Сайт представительства
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--goman-sublist" data-parent="goman">
-                                <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--goman-sublist" data-parent="goman">
+                              <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                                  <svg width="34" height="15" aria-hidden="true">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                  </svg></a>
+                                <div class="logo-wrapper logo-wrapper--goman-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
+                                <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
+                                <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="goman-sublist" name="brands" value="goman"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="goman">Сайт представительства
                                     <svg width="34" height="15" aria-hidden="true">
                                       <use xlink:href="#icon-arrow-right"></use>
                                     </svg></a>
-                                  <div class="logo-wrapper logo-wrapper--goman-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
-                                    <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
-                                    <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="goman-sublist" name="brands" value="goman"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="goman">Сайт представительства
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--platform-sublist" data-parent="platform">
-                                <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--platform-sublist" data-parent="platform">
+                              <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                                  <svg width="34" height="15" aria-hidden="true">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                  </svg></a>
+                                <div class="logo-wrapper logo-wrapper--platform-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
+                                <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
+                                <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="platform-sublist" name="brands" value="platform"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="platform">Сайт представительства
                                     <svg width="34" height="15" aria-hidden="true">
                                       <use xlink:href="#icon-arrow-right"></use>
                                     </svg></a>
-                                  <div class="logo-wrapper logo-wrapper--platform-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
-                                    <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
-                                    <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="platform-sublist" name="brands" value="platform"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="platform">Сайт представительства
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--nifty-sublist" data-parent="nifty">
-                                <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--nifty-sublist" data-parent="nifty">
+                              <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                                  <svg width="34" height="15" aria-hidden="true">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                  </svg></a>
+                                <div class="logo-wrapper logo-wrapper--nifty-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
+                                <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
+                                <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="nifty-sublist" name="brands" value="nifty"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="nifty">Сайт представительства
                                     <svg width="34" height="15" aria-hidden="true">
                                       <use xlink:href="#icon-arrow-right"></use>
                                     </svg></a>
-                                  <div class="logo-wrapper logo-wrapper--nifty-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
-                                    <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
-                                    <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="nifty-sublist" name="brands" value="nifty"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="nifty">Сайт представительства
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--jlg-sublist" data-parent="jlg">
-                                <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--jlg-sublist" data-parent="jlg">
+                              <div class="brands-item__content"><a class="brands-item__link">назад к брендам
+                                  <svg width="34" height="15" aria-hidden="true">
+                                    <use xlink:href="#icon-arrow-right"></use>
+                                  </svg></a>
+                                <div class="logo-wrapper logo-wrapper--jlg-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
+                                <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
+                                <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="jlg-sublist" name="brands" value="jlg"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="jlg">Сайт представительства
                                     <svg width="34" height="15" aria-hidden="true">
                                       <use xlink:href="#icon-arrow-right"></use>
                                     </svg></a>
-                                  <div class="logo-wrapper logo-wrapper--jlg-sublist"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="207" height="40" alt="Logo LGMG">
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                          <ul class="filters-item__list brands-list">
+                            <li class="brands-item brands-item--lgmg" data-parent="lgmg">
+                              <div class="brands-item__content">
+                                <div class="logo-wrapper logo-wrapper--lgmg"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="104" height="20" alt="Logo LGMG">
+                                </div>
+                                <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="lgmg" name="brands" value="lgmg"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="lgmg">Подробнее
+                                    <svg width="34" height="15" aria-hidden="true">
+                                      <use xlink:href="#icon-arrow-right"></use>
+                                    </svg></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--zoomlion" data-parent="zoomlion">
+                              <div class="brands-item__content">
+                                <div class="logo-wrapper logo-wrapper--zoomlion"><img src="img/content/brands/logo-zoomlion.png" srcset="img/content/brands/logo-zoomlion@2x.png 2x" width="87" height="30" alt="Logo Zoomlion">
+                                </div>
+                                <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="zoomlion" name="brands" value="zoomlion"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="zoomlion">Подробнее
+                                    <svg width="34" height="15" aria-hidden="true">
+                                      <use xlink:href="#icon-arrow-right"></use>
+                                    </svg></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--haulotte" data-parent="haulotte">
+                              <div class="brands-item__content">
+                                <div class="logo-wrapper logo-wrapper--haulotte"><img src="img/content/brands/logo-haulotte.png" srcset="img/content/brands/logo-haulotte@2x.png 2x" width="132" height="20" alt="Logo Haulotte">
+                                </div>
+                                <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="haulotte" name="brands" value="haulotte"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="haulotte">Подробнее
+                                    <svg width="34" height="15" aria-hidden="true">
+                                      <use xlink:href="#icon-arrow-right"></use>
+                                    </svg></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--genie" data-parent="genie">
+                              <div class="brands-item__content">
+                                <div class="logo-wrapper logo-wrapper--genie"><img src="img/content/brands/logo-genie.png" srcset="img/content/brands/logo-genie@2x.png 2x" width="80" height="30" alt="Logo Genie a terex brand">
+                                </div>
+                                <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="genie" name="brands" value="genie"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="genie">Подробнее
+                                    <svg width="34" height="15" aria-hidden="true">
+                                      <use xlink:href="#icon-arrow-right"></use>
+                                    </svg></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--manitou" data-parent="manitou">
+                              <div class="brands-item__content">
+                                <div class="logo-wrapper logo-wrapper--manitou"><img src="img/content/brands/logo-manitou.png" srcset="img/content/brands/logo-manitou@2x.png 2x" width="113" height="30" alt="Logo Manitou group">
+                                </div>
+                                <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="manitou" name="brands" value="manitou"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="manitou">Подробнее
+                                    <svg width="34" height="15" aria-hidden="true">
+                                      <use xlink:href="#icon-arrow-right"></use>
+                                    </svg></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--magni" data-parent="magni">
+                              <div class="brands-item__content">
+                                <div class="logo-wrapper logo-wrapper--magni"><img src="img/content/brands/logo-magni.png" srcset="img/content/brands/logo-magni@2x.png 2x" width="95" height="30" alt="Logo Magni telescopic handlers">
+                                </div>
+                                <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="magni" name="brands" value="magni"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="magni">Подробнее
+                                    <svg width="34" height="15" aria-hidden="true">
+                                      <use xlink:href="#icon-arrow-right"></use>
+                                    </svg></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--dingli" data-parent="dingli">
+                              <div class="brands-item__content">
+                                <div class="logo-wrapper logo-wrapper--dingli"><img src="img/content/brands/logo-dingli.png" srcset="img/content/brands/logo-dingli@2x.png 2x" width="89" height="30" alt="Logo Dingli exceed new height">
+                                </div>
+                                <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="dingli" name="brands" value="dingli"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="dingli">Подробнее
+                                    <svg width="34" height="15" aria-hidden="true">
+                                      <use xlink:href="#icon-arrow-right"></use>
+                                    </svg></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--goman" data-parent="goman">
+                              <div class="brands-item__content">
+                                <div class="logo-wrapper logo-wrapper--goman"><img src="img/content/brands/logo-goman.png" srcset="img/content/brands/logo-goman@2x.png 2x" width="152" height="30" alt="Logo Goman lift">
+                                </div>
+                                <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="goman" name="brands" value="goman"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="goman">Подробнее
+                                    <svg width="34" height="15" aria-hidden="true">
+                                      <use xlink:href="#icon-arrow-right"></use>
+                                    </svg></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--platform" data-parent="platform">
+                              <div class="brands-item__content">
+                                <div class="logo-wrapper logo-wrapper--platform"><img src="img/content/brands/logo-platform.png" srcset="img/content/brands/logo-platform@2x.png 2x" width="111" height="30" alt="Logo Platform basket">
+                                </div>
+                                <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="platform" name="brands" value="platform"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="platform">Подробнее
+                                    <svg width="34" height="15" aria-hidden="true">
+                                      <use xlink:href="#icon-arrow-right"></use>
+                                    </svg></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--nifty" data-parent="nifty">
+                              <div class="brands-item__content">
+                                <div class="logo-wrapper logo-wrapper--nifty"><img src="img/content/brands/logo-nifty.png" srcset="img/content/brands/logo-nifty@2x.png 2x" width="80" height="40" alt="Logo Nifty lift">
+                                </div>
+                                <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="nifty" name="brands" value="nifty"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="nifty">Подробнее
+                                    <svg width="34" height="15" aria-hidden="true">
+                                      <use xlink:href="#icon-arrow-right"></use>
+                                    </svg></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="brands-item brands-item--jlg" data-parent="jlg">
+                              <div class="brands-item__content">
+                                <div class="logo-wrapper logo-wrapper--jlg"><img src="img/content/brands/logo-jlg.png" srcset="img/content/brands/logo-jlg@2x.png 2x" width="90" height="30" alt="Logo JLG">
+                                </div>
+                                <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
+                                <div class="brands-item__buttons">
+                                  <div class="custom-toggle">
+                                    <label>
+                                      <input type="checkbox" id="jlg" name="brands" value="jlg"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
+                                    </label>
+                                  </div><a class="brands-item__link" href="#" data-parent="jlg">Подробнее
+                                    <svg width="34" height="15" aria-hidden="true">
+                                      <use xlink:href="#icon-arrow-right"></use>
+                                    </svg></a>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="form-filters__item filters-item filters-item--2" data-parent="equipment">
+                          <button class="btn filters-item__btn" type="button">Тип оборудования
+                            <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
+                              <use xlink:href="#icon-bracket-bottom"></use>
+                            </svg>
+                          </button>
+                          <ul class="active-icons">
+                            <li class="active-icon active-icon--equipment" data-category="equipment" data-parent="scissor"><span class="active-icon__title">Ножничные</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--equipment" data-category="equipment" data-parent="cranked"><span class="active-icon__title">Коленчатые</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--equipment" data-category="equipment" data-parent="telescopic"><span class="active-icon__title">Телескопические</span><span class="active-icon__icon"></span>
+                            </li>
+                          </ul>
+                          <ul class="filters-item__list equipments-list">
+                            <li class="checkbox-item" data-filter>
+                              <label for="scissor">Ножничные
+                                <input class="visually-hidden checkbox-item__input" type="checkbox" id="scissor" name="equipment" value="scissor"><span></span>
+                              </label>
+                            </li>
+                            <li class="checkbox-item" data-filter>
+                              <label for="cranked">Коленчатые
+                                <input class="visually-hidden checkbox-item__input" type="checkbox" id="cranked" name="equipment" value="cranked"><span></span>
+                              </label>
+                            </li>
+                            <li class="checkbox-item" data-filter>
+                              <label for="telescopic">Телескопические
+                                <input class="visually-hidden checkbox-item__input" type="checkbox" id="telescopic" name="equipment" value="telescopic"><span></span>
+                              </label>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="form-filters__item filters-item filters-item--3" data-parent="power">
+                          <button class="btn filters-item__btn" type="button">Тип питания
+                            <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
+                              <use xlink:href="#icon-bracket-bottom"></use>
+                            </svg>
+                          </button>
+                          <ul class="active-icons">
+                            <li class="active-icon active-icon--power" data-category="power" data-parent="electric"><span class="active-icon__title">Электрический</span><span class="active-icon__icon"></span>
+                            </li>
+                            <li class="active-icon active-icon--power" data-category="power" data-parent="diesel"><span class="active-icon__title">Дизельный</span><span class="active-icon__icon"></span>
+                            </li>
+                          </ul>
+                          <ul class="filters-item__list power-list">
+                            <li class="checkbox-item" data-filter>
+                              <label for="electric">Электрический
+                                <input class="visually-hidden checkbox-item__input" type="checkbox" id="electric" name="power" value="electric"><span></span>
+                              </label>
+                            </li>
+                            <li class="checkbox-item" data-filter>
+                              <label for="diesel">Дизельный
+                                <input class="visually-hidden checkbox-item__input" type="checkbox" id="diesel" name="power" value="diesel"><span></span>
+                              </label>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="form-filters__item filters-item filters-item--4" data-parent="height">
+                          <button class="btn filters-item__btn" type="button">Рабочая высота, м
+                            <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
+                              <use xlink:href="#icon-bracket-bottom"></use>
+                            </svg>
+                          </button>
+                          <ul class="active-icons">
+                            <li class="active-icon active-icon--height" data-category="height" data-parent="height"><span class="active-icon__title active-icon__title--range"></span><span class="active-icon__icon"></span>
+                            </li>
+                          </ul>
+                          <ul class="filters-item__list height-list">
+                            <li class="range-item" data-filter>
+                              <div class="js-range form-range" id="height">
+                                <div class="form-range__list">
+                                  <div class="form-range__item js-range-input-min">
+                                    <label for="min-height">от</label>
+                                    <input id="min-height" type="number" min="5" max="25" step="1" value="7">
                                   </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Основанная в 1972 году, Lingong Machinery Group является одним из основных производителей строительной техники.</p>
-                                    <p class="brands-item__description">LingongGroup Jinan Heavy Machinery Co.,Ltd. (LGMG) входит в тройку основных компаний Lingong Group.</p>
-                                    <p class="brands-item__description">LGMG является одним из крупнейших и наиболее профессиональных производителей подъемного оборудования в Китае.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="jlg-sublist" name="brands" value="jlg"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="jlg">Сайт представительства
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
+                                  <div class="form-range__item js-range-input-max">
+                                    <label for="max-height">до</label>
+                                    <input id="max-height" type="number" min="5" max="25" step="1" value="20">
                                   </div>
                                 </div>
-                              </li>
-                            </ul>
-                            <ul class="filters-item__list brands-list">
-                              <li class="brands-item brands-item--lgmg" data-parent="lgmg">
-                                <div class="brands-item__content">
-                                  <div class="logo-wrapper logo-wrapper--lgmg"><img src="img/content/brands/logo-lgmg.png" srcset="img/content/brands/logo-lgmg@2x.png 2x" width="104" height="20" alt="Logo LGMG">
+                                <div class="js-range-slider"></div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="form-filters__item filters-item filters-item--5" data-parent="capacity">
+                          <button class="btn filters-item__btn" type="button">Грузоподъемность, кг
+                            <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
+                              <use xlink:href="#icon-bracket-bottom"></use>
+                            </svg>
+                          </button>
+                          <ul class="active-icons">
+                            <li class="active-icon active-icon--capacity" data-category="capacity" data-parent="capacity"><span class="active-icon__title active-icon__title--range"></span><span class="active-icon__icon"></span>
+                            </li>
+                          </ul>
+                          <ul class="filters-item__list capacity-list">
+                            <li class="range-item" data-filter>
+                              <div class="js-range form-range" id="capacity">
+                                <div class="form-range__list">
+                                  <div class="form-range__item js-range-input-min">
+                                    <label for="min-capacity">от</label>
+                                    <input id="min-capacity" type="number" min="200" max="400" step="1" value="250">
                                   </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="lgmg" name="brands" value="lgmg"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="lgmg">Подробнее
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="brands-item brands-item--zoomlion" data-parent="zoomlion">
-                                <div class="brands-item__content">
-                                  <div class="logo-wrapper logo-wrapper--zoomlion"><img src="img/content/brands/logo-zoomlion.png" srcset="img/content/brands/logo-zoomlion@2x.png 2x" width="87" height="30" alt="Logo Zoomlion">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="zoomlion" name="brands" value="zoomlion"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="zoomlion">Подробнее
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
+                                  <div class="form-range__item js-range-input-max">
+                                    <label for="max-capacity">до</label>
+                                    <input id="max-capacity" type="number" min="200" max="400" step="1" value="350">
                                   </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--haulotte" data-parent="haulotte">
-                                <div class="brands-item__content">
-                                  <div class="logo-wrapper logo-wrapper--haulotte"><img src="img/content/brands/logo-haulotte.png" srcset="img/content/brands/logo-haulotte@2x.png 2x" width="132" height="20" alt="Logo Haulotte">
+                                <div class="js-range-slider"></div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="form-filters__item filters-item filters-item--6" data-parent="price">
+                          <button class="btn filters-item__btn" type="button">Стоимость, руб.
+                            <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
+                              <use xlink:href="#icon-bracket-bottom"></use>
+                            </svg>
+                          </button>
+                          <ul class="active-icons">
+                            <li class="active-icon active-icon--price" data-category="price" data-parent="price"><span class="active-icon__title active-icon__title--range"></span><span class="active-icon__icon"></span>
+                            </li>
+                          </ul>
+                          <ul class="filters-item__list cost-list">
+                            <li class="range-item" data-filter>
+                              <div class="js-range form-range" id="price">
+                                <div class="form-range__list">
+                                  <div class="form-range__item js-range-input-min">
+                                    <label for="min-price">от</label>
+                                    <input id="min-price" type="number" min="500000" max="10000000" step="1" value="750000">
                                   </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="haulotte" name="brands" value="haulotte"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="haulotte">Подробнее
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="brands-item brands-item--genie" data-parent="genie">
-                                <div class="brands-item__content">
-                                  <div class="logo-wrapper logo-wrapper--genie"><img src="img/content/brands/logo-genie.png" srcset="img/content/brands/logo-genie@2x.png 2x" width="80" height="30" alt="Logo Genie a terex brand">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="genie" name="brands" value="genie"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="genie">Подробнее
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
+                                  <div class="form-range__item js-range-input-max">
+                                    <label for="max-price">до</label>
+                                    <input id="max-price" type="number" min="500000" max="10000000" step="1" value="5000000">
                                   </div>
                                 </div>
-                              </li>
-                              <li class="brands-item brands-item--manitou" data-parent="manitou">
-                                <div class="brands-item__content">
-                                  <div class="logo-wrapper logo-wrapper--manitou"><img src="img/content/brands/logo-manitou.png" srcset="img/content/brands/logo-manitou@2x.png 2x" width="113" height="30" alt="Logo Manitou group">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="manitou" name="brands" value="manitou"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="manitou">Подробнее
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="brands-item brands-item--magni" data-parent="magni">
-                                <div class="brands-item__content">
-                                  <div class="logo-wrapper logo-wrapper--magni"><img src="img/content/brands/logo-magni.png" srcset="img/content/brands/logo-magni@2x.png 2x" width="95" height="30" alt="Logo Magni telescopic handlers">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="magni" name="brands" value="magni"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="magni">Подробнее
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="brands-item brands-item--dingli" data-parent="dingli">
-                                <div class="brands-item__content">
-                                  <div class="logo-wrapper logo-wrapper--dingli"><img src="img/content/brands/logo-dingli.png" srcset="img/content/brands/logo-dingli@2x.png 2x" width="89" height="30" alt="Logo Dingli exceed new height">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="dingli" name="brands" value="dingli"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="dingli">Подробнее
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="brands-item brands-item--goman" data-parent="goman">
-                                <div class="brands-item__content">
-                                  <div class="logo-wrapper logo-wrapper--goman"><img src="img/content/brands/logo-goman.png" srcset="img/content/brands/logo-goman@2x.png 2x" width="152" height="30" alt="Logo Goman lift">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="goman" name="brands" value="goman"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="goman">Подробнее
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="brands-item brands-item--platform" data-parent="platform">
-                                <div class="brands-item__content">
-                                  <div class="logo-wrapper logo-wrapper--platform"><img src="img/content/brands/logo-platform.png" srcset="img/content/brands/logo-platform@2x.png 2x" width="111" height="30" alt="Logo Platform basket">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="platform" name="brands" value="platform"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="platform">Подробнее
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="brands-item brands-item--nifty" data-parent="nifty">
-                                <div class="brands-item__content">
-                                  <div class="logo-wrapper logo-wrapper--nifty"><img src="img/content/brands/logo-nifty.png" srcset="img/content/brands/logo-nifty@2x.png 2x" width="80" height="40" alt="Logo Nifty lift">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="nifty" name="brands" value="nifty"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="nifty">Подробнее
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="brands-item brands-item--jlg" data-parent="jlg">
-                                <div class="brands-item__content">
-                                  <div class="logo-wrapper logo-wrapper--jlg"><img src="img/content/brands/logo-jlg.png" srcset="img/content/brands/logo-jlg@2x.png 2x" width="90" height="30" alt="Logo JLG">
-                                  </div>
-                                  <div class="brands-item__wrapper">
-                                    <p class="brands-item__description">Компания является одним из ведущих мировых производителей подъемного оборудования.</p>
-                                  </div>
-                                  <div class="brands-item__buttons">
-                                    <div class="custom-toggle">
-                                      <label>
-                                        <input type="checkbox" id="jlg" name="brands" value="jlg"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Выбрать</span>
-                                      </label>
-                                    </div><a class="brands-item__link" href="#" data-parent="jlg">Подробнее
-                                      <svg width="34" height="15" aria-hidden="true">
-                                        <use xlink:href="#icon-arrow-right"></use>
-                                      </svg></a>
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="form-filters__item filters-item filters-item--2" data-parent="equipment">
-                            <div class="filters-item__wrapper">
-                              <h3 class="filters-item__title">Тип оборудования</h3>
-                              <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
-                                <use xlink:href="#icon-bracket-bottom"></use>
-                              </svg>
-                            </div>
-                            <ul class="active-icons">
-                              <li class="active-icon active-icon--equipment" data-category="equipment" data-parent="scissor"><span class="active-icon__title">Ножничные</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--equipment" data-category="equipment" data-parent="cranked"><span class="active-icon__title">Коленчатые</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--equipment" data-category="equipment" data-parent="telescopic"><span class="active-icon__title">Телескопические</span><span class="active-icon__icon"></span>
-                              </li>
-                            </ul>
-                            <ul class="filters-item__list equipments-list">
-                              <li class="checkbox-item">
-                                <label for="scissor">Ножничные
-                                  <input class="visually-hidden checkbox-item__input" type="checkbox" id="scissor" name="equipment" value="scissor"><span></span>
-                                </label>
-                              </li>
-                              <li class="checkbox-item">
-                                <label for="cranked">Коленчатые
-                                  <input class="visually-hidden checkbox-item__input" type="checkbox" id="cranked" name="equipment" value="cranked"><span></span>
-                                </label>
-                              </li>
-                              <li class="checkbox-item">
-                                <label for="telescopic">Телескопические
-                                  <input class="visually-hidden checkbox-item__input" type="checkbox" id="telescopic" name="equipment" value="telescopic"><span></span>
-                                </label>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="form-filters__item filters-item filters-item--3" data-parent="power">
-                            <div class="filters-item__wrapper">
-                              <h3 class="filters-item__title">Тип питания</h3>
-                              <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
-                                <use xlink:href="#icon-bracket-bottom"></use>
-                              </svg>
-                            </div>
-                            <ul class="active-icons">
-                              <li class="active-icon active-icon--power" data-category="power" data-parent="electric"><span class="active-icon__title">Электрический</span><span class="active-icon__icon"></span>
-                              </li>
-                              <li class="active-icon active-icon--power" data-category="power" data-parent="diesel"><span class="active-icon__title">Дизельный</span><span class="active-icon__icon"></span>
-                              </li>
-                            </ul>
-                            <ul class="filters-item__list power-list">
-                              <li class="checkbox-item">
-                                <label for="electric">Электрический
-                                  <input class="visually-hidden checkbox-item__input" type="checkbox" id="electric" name="power" value="electric"><span></span>
-                                </label>
-                              </li>
-                              <li class="checkbox-item">
-                                <label for="diesel">Дизельный
-                                  <input class="visually-hidden checkbox-item__input" type="checkbox" id="diesel" name="power" value="diesel"><span></span>
-                                </label>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="form-filters__item filters-item filters-item--4" data-parent="height">
-                            <div class="filters-item__wrapper">
-                              <h3 class="filters-item__title">Рабочая высота, м</h3>
-                              <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
-                                <use xlink:href="#icon-bracket-bottom"></use>
-                              </svg>
-                            </div>
-                            <ul class="active-icons">
-                              <li class="active-icon active-icon--height" data-category="height" data-parent="height"><span class="active-icon__title active-icon__title--range"></span><span class="active-icon__icon"></span>
-                              </li>
-                            </ul>
-                            <ul class="filters-item__list height-list">
-                              <li class="range-item">
-                                <div class="js-range form-range" id="height">
-                                  <div class="form-range__list">
-                                    <div class="form-range__item js-range-input-min">
-                                      <label for="min-height">от</label>
-                                      <input id="min-height" type="number" min="5" max="25" step="1" value="7">
-                                    </div>
-                                    <div class="form-range__item js-range-input-max">
-                                      <label for="max-height">до</label>
-                                      <input id="max-height" type="number" min="5" max="25" step="1" value="20">
-                                    </div>
-                                  </div>
-                                  <div class="js-range-slider"></div>
-                                </div>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="form-filters__item filters-item filters-item--5" data-parent="capacity">
-                            <div class="filters-item__wrapper">
-                              <h3 class="filters-item__title">Грузоподъемность, кг</h3>
-                              <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
-                                <use xlink:href="#icon-bracket-bottom"></use>
-                              </svg>
-                            </div>
-                            <ul class="active-icons">
-                              <li class="active-icon active-icon--capacity" data-category="capacity" data-parent="capacity"><span class="active-icon__title active-icon__title--range"></span><span class="active-icon__icon"></span>
-                              </li>
-                            </ul>
-                            <ul class="filters-item__list capacity-list">
-                              <li class="range-item">
-                                <div class="js-range form-range" id="capacity">
-                                  <div class="form-range__list">
-                                    <div class="form-range__item js-range-input-min">
-                                      <label for="min-capacity">от</label>
-                                      <input id="min-capacity" type="number" min="200" max="400" step="1" value="250">
-                                    </div>
-                                    <div class="form-range__item js-range-input-max">
-                                      <label for="max-capacity">до</label>
-                                      <input id="max-capacity" type="number" min="200" max="400" step="1" value="350">
-                                    </div>
-                                  </div>
-                                  <div class="js-range-slider"></div>
-                                </div>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="form-filters__item filters-item filters-item--6" data-parent="price">
-                            <div class="filters-item__wrapper">
-                              <h3 class="filters-item__title">Стоимость, руб.</h3>
-                              <svg class="filters-item__icon" width="12" height="7" aria-hidden="true">
-                                <use xlink:href="#icon-bracket-bottom"></use>
-                              </svg>
-                            </div>
-                            <ul class="active-icons">
-                              <li class="active-icon active-icon--price" data-category="price" data-parent="price"><span class="active-icon__title active-icon__title--range"></span><span class="active-icon__icon"></span>
-                              </li>
-                            </ul>
-                            <ul class="filters-item__list cost-list">
-                              <li class="range-item">
-                                <div class="js-range form-range" id="price">
-                                  <div class="form-range__list">
-                                    <div class="form-range__item js-range-input-min">
-                                      <label for="min-price">от</label>
-                                      <input id="min-price" type="number" min="500000" max="10000000" step="1" value="750000">
-                                    </div>
-                                    <div class="form-range__item js-range-input-max">
-                                      <label for="max-price">до</label>
-                                      <input id="max-price" type="number" min="500000" max="10000000" step="1" value="5000000">
-                                    </div>
-                                  </div>
-                                  <div class="js-range-slider"></div>
-                                </div>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </form>
-                    </div>
-                  </section>
+                                <div class="js-range-slider"></div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1075,35 +1009,35 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Ножничный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">8</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">380</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Электрический</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">1 910</span>
@@ -1129,10 +1063,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -1175,41 +1109,42 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Телескопический</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">22</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">250</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Дизельный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">11 400</span>
                               </li>
                             </ul>
-                            <div class="catalog-card__price card-price"><span class="card-price__title">Стоимость аренды:</span><span class="card-price__old-sale">от 1 500 руб./смена</span>
+                            <div class="catalog-card__price card-price"><span class="card-price__title">Стоимость аренды:</span>
+                              <del class="card-price__old-sale">от 1 500 руб./смена</del>
                               <div class="card-price__sale-container">
                                 <p class="card-price__sale card-price__sale--sum">1 000<span class="card-price__sale card-price__sale--text">руб./смена</span></p>
                                 <div class="card-price__sale-wrapper">
@@ -1229,10 +1164,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -1275,35 +1210,35 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Коленчатый</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">16,09</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">230</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Дизельный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">7 160</span>
@@ -1329,10 +1264,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -1375,35 +1310,35 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Ножничный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">8</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">380</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Электрический</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">1 910</span>
@@ -1429,10 +1364,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -1475,35 +1410,35 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Ножничный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">8</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">380</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Электрический</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">1 910</span>
@@ -1529,10 +1464,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -1575,41 +1510,42 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Телескопический</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">22</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">250</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Дизельный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">11 400</span>
                               </li>
                             </ul>
-                            <div class="catalog-card__price card-price"><span class="card-price__title">Стоимость аренды:</span><span class="card-price__old-sale">от 1 500 руб./смена</span>
+                            <div class="catalog-card__price card-price"><span class="card-price__title">Стоимость аренды:</span>
+                              <del class="card-price__old-sale">от 1 500 руб./смена</del>
                               <div class="card-price__sale-container">
                                 <p class="card-price__sale card-price__sale--sum">1 000<span class="card-price__sale card-price__sale--text">руб./смена</span></p>
                                 <div class="card-price__sale-wrapper">
@@ -1629,10 +1565,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -1675,35 +1611,35 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Коленчатый</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">16,09</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">230</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Дизельный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">7 160</span>
@@ -1729,10 +1665,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -1775,35 +1711,35 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Ножничный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">8</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">380</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Электрический</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">1 910</span>
@@ -1829,10 +1765,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -1875,35 +1811,35 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Ножничный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">8</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">380</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Электрический</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">1 910</span>
@@ -1929,10 +1865,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -1975,41 +1911,42 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Телескопический</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">22</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">250</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Дизельный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">11 400</span>
                               </li>
                             </ul>
-                            <div class="catalog-card__price card-price"><span class="card-price__title">Стоимость аренды:</span><span class="card-price__old-sale">от 1 500 руб./смена</span>
+                            <div class="catalog-card__price card-price"><span class="card-price__title">Стоимость аренды:</span>
+                              <del class="card-price__old-sale">от 1 500 руб./смена</del>
                               <div class="card-price__sale-container">
                                 <p class="card-price__sale card-price__sale--sum">1 000<span class="card-price__sale card-price__sale--text">руб./смена</span></p>
                                 <div class="card-price__sale-wrapper">
@@ -2029,10 +1966,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -2075,35 +2012,35 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Коленчатый</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">16,09</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">230</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Дизельный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">7 160</span>
@@ -2129,10 +2066,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -2175,35 +2112,35 @@
                             <ul class="catalog-card__specs card-specs">
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="19" height="20" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--type" width="19" height="20" aria-hidden="true">
                                     <use xlink:href="#icon-type"></use>
                                   </svg><span class="card-specs__title">Тип подъемника</span>
                                 </div><span class="card-specs__type">Ножничный</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--height" width="24" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-height"></use>
                                   </svg><span class="card-specs__title">Рабочая высота, м</span>
                                 </div><span class="card-specs__type">8</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="17" height="19" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--capacity" width="17" height="19" aria-hidden="true">
                                     <use xlink:href="#icon-capacity"></use>
                                   </svg><span class="card-specs__title">Грузоподъемность, кг</span>
                                 </div><span class="card-specs__type">380</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="24" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--engin" width="24" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-engin"></use>
                                   </svg><span class="card-specs__title">Двигатель</span>
                                 </div><span class="card-specs__type">Электрический</span>
                               </li>
                               <li class="card-specs__item">
                                 <div class="card-specs__wrapper">
-                                  <svg width="20" height="16" aria-hidden="true">
+                                  <svg class="card-specs__icon card-specs__icon--weight" width="20" height="16" aria-hidden="true">
                                     <use xlink:href="#icon-weight"></use>
                                   </svg><span class="card-specs__title">Вес, кг</span>
                                 </div><span class="card-specs__type">1 910</span>
@@ -2229,10 +2166,10 @@
                           </div>
                         </div>
                         <div class="catalog-card__items">
-                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">
+                          <div class="catalog-card__comparison card-comparison"><a class="card-comparison__link" href="#">Добавить к сравнению
                               <svg width="21" height="26" aria-hidden="true">
                                 <use xlink:href="#icon-comparison"></use>
-                              </svg><span>Добавить к сравнению</span></a></div>
+                              </svg></a></div>
                           <div class="catalog-card__buttons"><a class="btn btn--black btn-reservation" href="#" data-open-modal="modal--reserv">Арендовать</a>
                             <div class="request-block">
                               <form class="request-block__form" action="#" method="get">
@@ -2312,10 +2249,10 @@
           </section>
         </div>
       </main>
-      <footer class="footer">
+      <footer class="footer container container--no-padding">
         <div class="footer__contacts">
           <div class="footer__contacts-inner">
-            <div class="footer__logo"><a href="index.html" aria-label="Перейти на главную страницу"><img src="img/svg/logo.svg" width="194" height="24" alt="Логотип Aurora"></a>
+            <div class="footer__logo"><a class="logo" href="index.html" aria-label="Перейти на главную страницу"><img src="img/svg/logo.svg" width="194" height="24" alt="Логотип Aurora"></a>
             </div>
             <ul class="footer__contacts-list">
               <li class="footer__contacts-item"><a class="control control--phone control--footer" href="tel:+78000000000" aria-label="Телефон">

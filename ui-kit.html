@@ -219,7 +219,6 @@
       <header class="header-ui">
         <nav class="header-ui__nav container"><a class="components-backwards" href="sitemap.html"><span>&larr;</span><span>вернуться на разводящую</span></a>
           <ul class="header-ui__inner-list">
-            <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#modals" data-navigation-link>Modals</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#buttons" data-navigation-link>Buttons</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#form-elements" data-navigation-link>Form elements</a></li>
           </ul>
@@ -228,15 +227,6 @@
       <main>
         <div class="container">
           <h1>UI-kit</h1>
-          <section id="modals">
-            <h2>Modals</h2>
-            <p>
-              <button class="btn" type="button" data-open-modal="feedback">modal-feedback</button>
-            </p>
-            <p>
-              <button class="btn" type="button" data-open-modal="success">modal-success</button>
-            </p>
-          </section>
           <section id="buttons">
             <h2>Buttons</h2>
             <a class="btn" href="#">Текст</a>
@@ -605,32 +595,6 @@ const navigationChanger = new NavigationChanger();
 navigationChanger.init();
 
       </script>
-    </div>
-    <div class="modal modal--preload modal--feedback" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" aria-hidden="true">
-              <use xlink:href="#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="modal modal--preload modal--success modal--no-scale modal--fit-content" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br>отключена анимация-скейл</p>
-          <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15" aria-hidden="true">
-              <use xlink:href="#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
