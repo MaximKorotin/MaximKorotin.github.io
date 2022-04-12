@@ -5453,10 +5453,11 @@ button,
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  min-width: 490px;
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: #ffffff;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   -o-transition: transform 0.3s ease;
@@ -5468,7 +5469,6 @@ button,
   -webkit-transform-origin: 50% 0;
   -ms-transform-origin: 50% 0;
   transform-origin: 50% 0;
-  overflow-y: auto;
 }
 
 .brands-sublist--active {
@@ -5491,23 +5491,11 @@ button,
   padding: 29px 58px 29px 20px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-transform: scaleY(0);
-  -ms-transform: scaleY(0);
-  transform: scaleY(0);
-  -webkit-transform-origin: 50% 0;
-  -ms-transform-origin: 50% 0;
-  transform-origin: 50% 0;
+  display: none;
 }
 
 .brands-sublist .brands-item--active {
-  -webkit-transform: scaleY(1);
-  -ms-transform: scaleY(1);
-  transform: scaleY(1);
+  display: block;
 }
 
 .brands-sublist .brands-item__link:first-child {
@@ -5521,6 +5509,7 @@ button,
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-left: 0;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 14px;
@@ -5544,6 +5533,7 @@ button,
 .brands-sublist .brands-item__link:last-child {
   border: 2px solid #000000;
   min-height: 27px;
+  margin-left: 0;
   padding: 2px 14px 2px 15px;
 }
 
@@ -13889,6 +13879,7 @@ button,
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+    min-width: 100%;
     max-height: 0;
     display: -webkit-box;
     display: -ms-flexbox;
