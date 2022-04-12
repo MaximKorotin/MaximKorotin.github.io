@@ -5453,6 +5453,7 @@ button,
   position: absolute;
   top: 100%;
   left: 0;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -5467,6 +5468,7 @@ button,
   -webkit-transform-origin: 50% 0;
   -ms-transform-origin: 50% 0;
   transform-origin: 50% 0;
+  overflow-y: auto;
 }
 
 .brands-sublist--active {
