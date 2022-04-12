@@ -13895,7 +13895,7 @@ button,
   }
 
   .brands-sublist--active ~ .brands-list {
-    max-height: 0;
+    display: none;
   }
 
   .brands-sublist .brands-item {
