@@ -290,96 +290,137 @@
         </div>
       </header>
       <main>
-        <div class="tabs-page">
-          <section class="main-header main-header--border-red">
-            <div class="container">
-              <div class="breadcrumbs">
-                <ul class="breadcrumbs__list">
-                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-                  <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link--current">Пресс-центр</span></li>
+        <section class="main-header">
+          <div class="container">
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+                <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link--current">Контакты</span></li>
+              </ul>
+            </div>
+            <h1 class="title title--h1 main-header__title">Контакты</h1>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="container container--no-padding">
+            <section class="contacts__info">
+              <div class="contacts__info-wrap">
+                <h2 class="contacts__info-title title">Главный офис в Москве</h2>
+                <ul class="contacts-list">
+                  <li class="contacts-list__item">
+                    <svg width="20" height="32" aria-hidden="true">
+                      <use xlink:href="#icon-phone-header"></use>
+                    </svg>
+                    <div class="contacts-list__label"><span class="contacts-list__note">Телефон:</span><a class="contacts-list__link" href="tel:88000000000">8 800 000-00-00</a></div>
+                  </li>
+                  <li class="contacts-list__item">
+                    <svg width="30" height="22" aria-hidden="true">
+                      <use xlink:href="#icon-mail"></use>
+                    </svg>
+                    <div class="contacts-list__label"><span class="contacts-list__note">Электронная почта:</span><a class="contacts-list__link" href="mailto:info@aurora.team">info@aurora.team</a></div>
+                  </li>
+                  <li class="contacts-list__item">
+                    <svg width="22" height="32" aria-hidden="true">
+                      <use xlink:href="#icon-geo"></use>
+                    </svg>
+                    <div class="contacts-list__label"><span class="contacts-list__note">Адрес:</span>
+                      <address class="contacts-list__text">Московская обл., г. Химки, Транспортный проезд, 2, БЦ «Аврора»</address>
+                    </div>
+                  </li>
+                  <li class="contacts-list__item">
+                    <svg width="30" height="30" aria-hidden="true">
+                      <use xlink:href="#icon-clock"></use>
+                    </svg>
+                    <div class="contacts-list__label"><span class="contacts-list__note">Режим работы:</span><span class="contacts-list__text">пн-пт с 10:00 до 18:00</span></div>
+                  </li>
                 </ul>
               </div>
-              <h1 class="title title--h1 main-header__title">Пресс-центр</h1>
-            </div>
-          </section>
-          <div class="tabs tabs--red" data-tabs="parent">
-            <div class="container container--content">
-              <div class="tabs__controls" data-tabs="controls">
-                <button class="tabs__control btn" type="button" data-tabs="control">Новости</button>
-                <button class="tabs__control btn" type="button" data-tabs="control">Акции</button>
+              <div class="contacts__img"><img src="img/content/contacts.jpg" srcset="img/content/contacts@2x.jpg 2x" width="960" height="620" alt="здание главного офиса в Москве">
               </div>
-              <div class="tabs__links"><a class="link is-active" href="#">Все</a><a class="link" href="#">2022</a><a class="link" href="#">2021</a><a class="link" href="#">2020</a><a class="link" href="#">2019</a><a class="link" href="#">2018</a></div>
-              <div class="tabs__content" data-tabs="content">
-                <div class="tabs__element" data-tabs="element">
-                  <div class="grid">
-                    <div class="card-wide">
-                      <div class="card-wide__img"><img src="img/content/traktor.jpg" srcset="img/content/traktor@2x.jpg 2x" width="580" height="400" alt="Трактор">
-                      </div>
-                      <date class="card-wide__date"><span class="card-wide__day">23</span><span class="card-wide__mounth">апреля</span><span class="card-wide__year">2021</span></date>
-                      <div class="card-wide__content"><a class="card-wide__title" href="#">5 новых единиц европейского бренда manitou</a>
-                        <p class="card-wide__description">В августе приобрели 5 новых единиц европейского бренда Manitou. AURORA всегда заботится о наличии оборудования в своём арендном парке, поэтому ежемесячно закупает новые подъемники.</p><a class="link link--red" href="#">подробнее
-                          <svg width="40" height="18" aria-hidden="true">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg></a>
-                      </div>
-                    </div>
-                    <div class="card-wide">
-                      <div class="card-wide__img"><img src="img/content/traktor.jpg" srcset="img/content/traktor@2x.jpg 2x" width="580" height="400" alt="Трактор">
-                      </div>
-                      <date class="card-wide__date"><span class="card-wide__day">23</span><span class="card-wide__mounth">апреля</span><span class="card-wide__year">2021</span></date>
-                      <div class="card-wide__content"><a class="card-wide__title" href="#">5 новых единиц европейского бренда manitou</a>
-                        <p class="card-wide__description">В августе приобрели 5 новых единиц европейского бренда Manitou. AURORA всегда заботится о наличии оборудования в своём арендном парке, поэтому ежемесячно закупает новые подъемники.</p><a class="link link--red" href="#">подробнее
-                          <svg width="40" height="18" aria-hidden="true">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg></a>
-                      </div>
+            </section>
+            <section class="contacts__map">
+              <div class="contacts__map-wrap">
+                <h2 class="contacts__map-title title">География Авроры</h2><img src="img/content/contacts-map.png" srcset="img/content/contacts-map@2x.png 2x" width="1920" height="800" alt="карта офисов Авроры по России">
+              </div>
+            </section>
+            <section class="contacts__form hotline">
+              <h2 class="contacts__form-title title">Горячая линия</h2>
+              <ul class="hotline__tabs-list">
+                <li class="hotline__tabs-item">
+                  <button class="hotline__tabs-button hotline__tabs-button--active">Оставить отзыв</button>
+                </li>
+                <li class="hotline__tabs-item">
+                  <button class="hotline__tabs-button">Обращение к руководству</button>
+                </li>
+              </ul>
+              <div class="hotline__content hotline__content--active hotline__feedback" data-validate>
+                <form class="form hotline__form hotline__form--feedback" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="form__field form-field" data-validate-type="text">
+                    <label for="name-1"></label>
+                    <input id="name-1" name="name" type="text" placeholder="ФИО" required><span class="form__warning">Обязательное поле</span>
+                  </div>
+                  <div class="form__field form-field" data-validate-type="text">
+                    <label for="company-1"></label>
+                    <input id="company-1" name="company" type="text" placeholder="Компания" required><span class="form__warning">Обязательное поле</span>
+                  </div>
+                  <div class="form__field form-field" data-validate-type="phone">
+                    <label for="phone-1"></label>
+                    <input id="phone-1" name="phone" type="tel" placeholder="Телефон"><span class="form__warning">Обязательное поле</span>
+                  </div>
+                  <div class="form__field form-field" data-validate-type="email">
+                    <label for="email-1"></label>
+                    <input id="email-1" name="email" type="text" placeholder="Электронная почта" required><span class="form__warning">Некорректная электронная почта</span>
+                  </div>
+                  <div class="form__field form-field form-upload-field">
+                    <label for="file">Выбрать</label>
+                    <input id="file" name="file" type="file">
+                    <div class="form-upload-field__preview">
+                      <p>Прикрепить файлы</p>
                     </div>
                   </div>
-                  <div class="pagination-numb"><a class="pagination-numb__prev" href="#" aria-label="Предыдущая страница">
-                      <svg width="40" height="18" aria-hidden="true">
-                        <use xlink:href="#icon-arrow-right"></use>
-                      </svg></a><a class="pagination-numb__btn is-active" href="#" aria-label="1 страница">1</a><a class="pagination-numb__btn" href="#" aria-label="2 страница">2</a><a class="pagination-numb__btn" href="#" aria-label="3 страница">3</a><a class="pagination-numb__btn pagination-numb__btn--more" type="button" aria-label="показать ещё">...</a><a class="pagination-numb__btn" href="#" aria-label="10 страница">10</a><a class="pagination-numb__next" href="#" aria-label="Следующая страница">
-                      <svg width="40" height="18" aria-hidden="true">
-                        <use xlink:href="#icon-arrow-right"></use>
-                      </svg></a></div>
-                </div>
-                <div class="tabs__element" data-tabs="element">
-                  <div class="grid">
-                    <div class="card-wide">
-                      <div class="card-wide__img"><img src="img/content/traktor.jpg" srcset="img/content/traktor@2x.jpg 2x" width="580" height="400" alt="Трактор">
-                      </div>
-                      <date class="card-wide__date"><span class="card-wide__day">23</span><span class="card-wide__mounth">апреля</span><span class="card-wide__year">2021</span></date>
-                      <div class="card-wide__content"><a class="card-wide__title" href="#">5 новых единиц европейского бренда manitou</a>
-                        <p class="card-wide__description">В августе приобрели 5 новых единиц европейского бренда Manitou. AURORA всегда заботится о наличии оборудования в своём арендном парке, поэтому ежемесячно закупает новые подъемники.</p><a class="link link--red" href="#">подробнее
-                          <svg width="40" height="18" aria-hidden="true">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg></a>
-                      </div>
-                    </div>
-                    <div class="card-wide">
-                      <div class="card-wide__img"><img src="img/content/traktor.jpg" srcset="img/content/traktor@2x.jpg 2x" width="580" height="400" alt="Трактор">
-                      </div>
-                      <date class="card-wide__date"><span class="card-wide__day">23</span><span class="card-wide__mounth">апреля</span><span class="card-wide__year">2021</span></date>
-                      <div class="card-wide__content"><a class="card-wide__title" href="#">5 новых единиц европейского бренда manitou</a>
-                        <p class="card-wide__description">В августе приобрели 5 новых единиц европейского бренда Manitou. AURORA всегда заботится о наличии оборудования в своём арендном парке, поэтому ежемесячно закупает новые подъемники.</p><a class="link link--red" href="#">подробнее
-                          <svg width="40" height="18" aria-hidden="true">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg></a>
-                      </div>
-                    </div>
+                  <div class="form__field form-field">
+                    <label for="region"></label>
+                    <input id="region" name="region" type="text" placeholder="Регион">
                   </div>
-                  <div class="pagination-numb"><a class="pagination-numb__prev" href="#" aria-label="Предыдущая страница">
-                      <svg width="40" height="18" aria-hidden="true">
-                        <use xlink:href="#icon-arrow-right"></use>
-                      </svg></a><a class="pagination-numb__btn is-active" href="#" aria-label="1 страница">1</a><a class="pagination-numb__btn" href="#" aria-label="2 страница">2</a><a class="pagination-numb__btn" href="#" aria-label="3 страница">3</a><a class="pagination-numb__btn pagination-numb__btn--more" type="button" aria-label="показать ещё">...</a><a class="pagination-numb__btn" href="#" aria-label="10 страница">10</a><a class="pagination-numb__next" href="#" aria-label="Следующая страница">
-                      <svg width="40" height="18" aria-hidden="true">
-                        <use xlink:href="#icon-arrow-right"></use>
-                      </svg></a></div>
-                </div>
+                  <textarea name="message" cols="30" rows="10" placeholder="Текст отзыва"></textarea>
+                  <div class="hotline__form-accept" data-validate-type="checkbox">
+                    <label for="check-1">Согласен с политикой конфиденциальности
+                      <input class="visually-hidden" id="check-1" type="checkbox" required><span></span>
+                    </label>
+                  </div>
+                  <button class="btn btn--red hotline__form-button" type="submit">Отправить</button>
+                </form>
               </div>
-            </div>
+              <div class="hotline__content hotline__management" data-validate>
+                <form class="form hotline__form hotline__form--management" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="form__field form-field" data-validate-type="text">
+                    <label for="name-2"></label>
+                    <input id="name-2" name="name" type="text" placeholder="ФИО" required><span class="form__warning">Обязательное поле</span>
+                  </div>
+                  <div class="form__field form-field" data-validate-type="text">
+                    <label for="company-2"></label>
+                    <input id="company-2" name="company" type="text" placeholder="Компания" required><span class="form__warning">Обязательное поле</span>
+                  </div>
+                  <div class="form__field form-field" data-validate-type="phone">
+                    <label for="phone-2"></label>
+                    <input id="phone-2" name="phone" type="tel" placeholder="Телефон"><span class="form__warning">Обязательное поле</span>
+                  </div>
+                  <div class="form__field form-field" data-validate-type="email">
+                    <label for="email-2"></label>
+                    <input id="email-2" name="email" type="text" placeholder="Электронная почта" required><span class="form__warning">Некорректная электронная почта</span>
+                  </div>
+                  <textarea name="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                  <div class="hotline__form-accept" data-validate-type="checkbox">
+                    <label for="check-2">Согласен с политикой конфиденциальности
+                      <input class="visually-hidden" id="check-2" type="checkbox" required><span></span>
+                    </label>
+                  </div>
+                  <button class="btn btn--red hotline__form-button" type="submit">Отправить</button>
+                </form>
+              </div>
+            </section>
           </div>
-        </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__contacts">
